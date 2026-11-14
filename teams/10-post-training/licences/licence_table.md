@@ -47,12 +47,14 @@ Three stages. Sets marked `excluded` stay in the table with the reason and are n
 | sft-agentic-nemotron-sft-agentic-v2-other | [nvidia/Nemotron-SFT-Agentic-v2](https://huggingface.co/datasets/nvidia/Nemotron-SFT-Agentic-v2) (search and customer-service parts) | English / web search, customer service | Unknown (not stated on the card for either part) | cc-by-4.0, apache-2.0, mit (Hub tags) | excluded |
 | sft-code-nemotron-terminal | [nvidia/Nemotron-Terminal-Corpus](https://huggingface.co/datasets/nvidia/Nemotron-Terminal-Corpus) | Code (terminal agent) | DeepSeek-V3.2 (MIT, open weights) for both the synthetic tasks and the trajectories (paper, arXiv 2602.21193) | cc-by-4.0 (Hub tag; commercial use permitted per tag) | TSAI reserves |
 | sft-code-opencodereasoning | [nvidia/OpenCodeReasoning](https://huggingface.co/datasets/nvidia/OpenCodeReasoning) | Code (competitive) | DeepSeek-R1 (MIT, open weights) | cc-by-4.0 (Hub tag; commercial use permitted per tag) | TSAI reserves |
-| sft-code-opencodereasoning-2 | [nvidia/OpenCodeReasoning-2](https://huggingface.co/datasets/nvidia/OpenCodeReasoning-2) | Code (competitive) | DeepSeek-R1 (MIT) for solutions, QwQ-32B (Apache-2.0) for critiques (both open weights) | cc-by-4.0 (Hub tag; commercial use permitted per tag) | TSAI reserves |
+| sft-code-opencodereasoning-2 | [nvidia/OpenCodeReasoning-2](https://huggingface.co/datasets/nvidia/OpenCodeReasoning-2) | Code (competitive) | DeepSeek-R1 (MIT) for solutions, QwQ-32B (Apache-2.0) for critiques (both open weights) | cc-by-4.0 (Hub tag; commercial use permitted per tag) | allowed (TSAI admitted, 11 Nov 2026) |
 | sft-code-codeforces-cots | [open-r1/codeforces-cots](https://huggingface.co/datasets/open-r1/codeforces-cots) | Code (competitive) | DeepSeek-R1 (MIT, open weights) | cc-by-4.0 (Hub tag; commercial use permitted per tag) | TSAI reserves |
 | sft-indic-aya-collection | [CohereLabs/aya_collection](https://huggingface.co/datasets/CohereLabs/aya_collection) (12 templated Indic subsets only) | Hindi, Bengali, Tamil, Telugu | none (human speaker-written templates applied to human-annotated Indic NLP datasets; no model generator) | apache-2.0 (Hub tag; commercial use permitted per tag) | TSAI reserves |
 | sft-indic-aya-collection-other | [CohereLabs/aya_collection](https://huggingface.co/datasets/CohereLabs/aya_collection) (all 19 translated datasets and the other templated subsets) | 101 languages | NLLB-3.3B (CC-BY-NC-4.0, non-commercial) machine translation; upstream English generator models not stated on the card | apache-2.0 (Hub tag) | excluded |
 | sft-indic-aya-dataset | [CohereLabs/aya_dataset](https://huggingface.co/datasets/CohereLabs/aya_dataset) | Multilingual incl. Indic | none (human-written annotations; no model generator) | apache-2.0 (Hub tag; commercial use permitted per tag) | TSAI reserves |
 | sft-indic-indic-align | [ai4bharat/indic-align](https://huggingface.co/datasets/ai4bharat/indic-align) | 14 Indic languages | Llama-2-70B-Chat (Llama 2 Community Licence, use restrictions) for many parts; Mistral-7B (Apache-2.0) in some parts | cc-by-4.0 (Hub tag; commercial use permitted per tag) | excluded |
+| sft-indic-indic-align-oasst-t | [ai4bharat/indic-align](https://huggingface.co/datasets/ai4bharat/indic-align) | 14 Indic languages (`OpenAssistant_T` subset only) | none for the text (human-written OpenAssistant v1 conversations); translated with IndicTrans2 (MIT, open weights) | cc-by-4.0 (Hub tag); source oasst1 apache-2.0 | TSAI reserves |
+| sft-indic-indic-align-dolly-t | [ai4bharat/indic-align](https://huggingface.co/datasets/ai4bharat/indic-align) | 14 Indic languages (`Dolly_T` subset only) | none for the text (human-written databricks-dolly-15k); translated with IndicTrans2 (MIT, open weights) | cc-by-4.0 (Hub tag); source dolly cc-by-sa-3.0 (share-alike, attribution needed) | allowed (CC-BY-SA, attribution needed) |
 | sft-indic-samvaad-hi | [sarvamai/samvaad-hi-v1](https://huggingface.co/datasets/sarvamai/samvaad-hi-v1) | Hindi, English, Hinglish | Unknown (not stated on the card or in Sarvam's announcement) | apache-2.0 (Hub tag; commercial use permitted per tag) | excluded |
 | sft-indic-code-oss-codes-coding | [oss-codes/Coding-Conversational-Dataset-Indic](https://huggingface.co/datasets/oss-codes/Coding-Conversational-Dataset-Indic) | Indic (Hindi, Tamil, ...) + code | Unknown (not stated; the card is empty) | mit (Hub tag; commercial use permitted per tag) | excluded |
 | sft-indic-code-oss-codes-cs | [oss-codes/Computer-Science-Conversational-Dataset-Indic](https://huggingface.co/datasets/oss-codes/Computer-Science-Conversational-Dataset-Indic) | Indic + computer science | Unknown (not stated; the card is empty) | mit (Hub tag; commercial use permitted per tag) | excluded |
@@ -71,7 +73,7 @@ Three stages. Sets marked `excluded` stay in the table with the reason and are n
 | sft-science-nemotron-science | [nvidia/Nemotron-Science-v1](https://huggingface.co/datasets/nvidia/Nemotron-Science-v1) | English / Science | gpt-oss-120b (Apache-2.0, open weights) | cc-by-4.0 (Hub tag; commercial use permitted per tag) | TSAI reserves |
 | sft-openhermes-2.5 | [teknium/OpenHermes-2.5](https://huggingface.co/datasets/teknium/OpenHermes-2.5) | English / Multi-domain | GPT-4 (OpenAI, proprietary closed), Mixtral-8x7B (Apache-2.0), and Llama (Llama licence) | apache-2.0 (Hub tag; commercial use permitted per tag) | excluded |
 | sft-tulu3-filtered | [allenai/tulu-3-sft-mixture](https://huggingface.co/datasets/allenai/tulu-3-sft-mixture) | English / Multi-domain | Llama-3.1-70B / Llama-3.1-405B (Llama 3.1 Community Licence) and GPT-4o (OpenAI, closed) | odc-by (Hub tag; commercial use permitted per tag) | excluded |
-| sft-dolly-15k | [databricks/databricks-dolly-15k](https://huggingface.co/datasets/databricks/databricks-dolly-15k) | English | none (human-written by Databricks employees; no model generator) | cc-by-sa-4.0 (Hub tag; share-alike, attribution needed) | allowed (CC-BY-SA, attribution needed) |
+| sft-dolly-15k | [databricks/databricks-dolly-15k](https://huggingface.co/datasets/databricks/databricks-dolly-15k) | English | none (human-written by Databricks employees; no model generator) | cc-by-sa-3.0 (Hub tag; share-alike, attribution needed) | allowed (CC-BY-SA, attribution needed) |
 | sft-lmsys-chat-1m | [lmsys/lmsys-chat-1m](https://huggingface.co/datasets/lmsys/lmsys-chat-1m) | Multilingual | Closed & Llama models in Chatbot Arena (custom non-standard LMSYS agreement) | LMSYS Agreement (custom terms, not standard permissive) | excluded |
 | sft-bespoke-stratos-17k | [bespokelabs/Bespoke-Stratos-17k](https://huggingface.co/datasets/bespokelabs/Bespoke-Stratos-17k) | English / STEM Reasoning | DeepSeek-R1 (MIT, open weights) | apache-2.0 (Hub tag; commercial use permitted per tag) | TSAI reserves |
 | sft-numinamath-tir | [AI-MO/NuminaMath-TIR](https://huggingface.co/datasets/AI-MO/NuminaMath-TIR) | English / Python Math Tools | GPT-4 (OpenAI, proprietary closed) generated Python tool-integrated reasoning traces | apache-2.0 (Hub tag; commercial use permitted per tag) | excluded |
@@ -89,6 +91,26 @@ Three stages. Sets marked `excluded` stay in the table with the reason and are n
 | sft-safety-wildjailbreak | [allenai/wildjailbreak](https://huggingface.co/datasets/allenai/wildjailbreak) | English | GPT-4 and GPT-3.5 (OpenAI, proprietary closed) + Mixtral-8x7B (Apache-2.0) | ODC-By; gated AI2 conditions | excluded |
 | sft-safety-nemotron-sft-v2 | [nvidia/Nemotron-SFT-Safety-v2](https://huggingface.co/datasets/nvidia/Nemotron-SFT-Safety-v2) | English, German, Spanish, French, Japanese, Italian, Chinese | Unknown English response/reasoning generator (not named on the card); Riva-Translate-4B-Instruct-v1.1 translates | CC-BY-4.0; additional Apache-2.0 / MIT terms | excluded |
 | sft-science-glm51-phd | [Jackrong/GLM-5.1-Reasoning-1M-Cleaned](https://huggingface.co/datasets/Jackrong/GLM-5.1-Reasoning-1M-Cleaned) | Science; release language tags: English / Chinese | GLM-5.1 (MIT, open weights) generates reasoning and final answers (`PHD-Science` Apache-2.0 config only) | Apache-2.0 (cleaned and upstream publisher cards) | TSAI reserves |
+| sft-code-nemotron-opencode | [nvidia/Nemotron-SFT-OpenCode-v1](https://huggingface.co/datasets/nvidia/Nemotron-SFT-OpenCode-v1) | English / Code (agentic CLI, tool use, agent skills) | gpt-oss-120b (Apache-2.0, open weights) writes the questions and agent skills; Qwen3-Coder-480B-A35B-Instruct (Apache-2.0, open weights) writes the solution traces | cc-by-4.0 (Hub tag; commercial use permitted per tag) | TSAI reserves |
+| sft-code-nemotron-cuda | [nvidia/Nemotron-SFT-CUDA-v1](https://huggingface.co/datasets/nvidia/Nemotron-SFT-CUDA-v1) | English / Code (CUDA kernels) | GLM-4.7 (MIT, open weights) writes the problems and the solutions; only runs that pass the hidden tests with no Compute-Sanitizer errors are kept (execution-verified) | cc-by-4.0 (Hub tag; commercial use permitted per tag) | TSAI reserves |
+| sft-math-nemotron-sft-math-v4 | [nvidia/Nemotron-SFT-Math-v4](https://huggingface.co/datasets/nvidia/Nemotron-SFT-Math-v4) | English / Mathematics | DeepSeek-V4-Pro (MIT, open weights) writes all solutions; problems are human-written (AoPS, Math StackExchange) and only solutions that match the reference answer are kept | cc-by-4.0 (AoPS-derived), cc-by-sa-4.0 (Math StackExchange-derived) (Hub tags; share-alike on part, attribution needed) | allowed (CC-BY-SA, attribution needed) |
+| sft-math-nemotron-proofs-v3-sft | [nvidia/Nemotron-Math-Proofs-v3-SFT](https://huggingface.co/datasets/nvidia/Nemotron-Math-Proofs-v3-SFT) | English / Mathematics (proofs) | DeepSeek-V4-Pro (MIT, open weights) writes the proof, refinement, verification and meta-verification traces; problems are human-written AoPS proof problems | cc-by-4.0 (Hub tag; commercial use permitted per tag) | TSAI reserves |
+| sft-code-swe-fixer | [internlm/SWE-Fixer-Train-110K](https://huggingface.co/datasets/internlm/SWE-Fixer-Train-110K) | English / Code (Python SWE: issue to patch) | none (human GitHub issues, hints, PR patches and test patches; the paper's GPT-4o chain-of-thought is not in this release) | mit (Hub tag; commercial use permitted per tag; upstream repository licences not filtered) | TSAI reserves |
+| sft-code-afm-codeagent | [PersonalAILab/AFM-CodeAgent-SFT-Dataset](https://huggingface.co/datasets/PersonalAILab/AFM-CodeAgent-SFT-Dataset) | English / Code and math (multi-agent tool-use trajectories) | Unknown (distilled from the OAgents multi-agent framework; the backbone LLM is not named on the card or in arXiv 2508.13167) | apache-2.0 (Hub tag; commercial use permitted per tag) | excluded |
+| sft-code-swe-hero-openhands | [nvidia/SWE-Hero-openhands-trajectories](https://huggingface.co/datasets/nvidia/SWE-Hero-openhands-trajectories) | English / Code (Python SWE agent trajectories, OpenHands) | Qwen3-Coder-480B-A35B-Instruct (Apache-2.0, open weights) writes all trajectories and the regenerated R2E-Gym-Subset issue statements | cc-by-4.0 (Hub tag; repositories limited to MIT, Apache-2.0, BSD-2, BSD-3; attribution needed) | TSAI reserves |
+| sft-code-swe-zero-openhands | [nvidia/SWE-Zero-openhands-trajectories](https://huggingface.co/datasets/nvidia/SWE-Zero-openhands-trajectories) | Code (agent trajectories) | Qwen3-Coder-480B-A35B-Instruct (Apache-2.0, open weights) via OpenHands; audit of all 318,115 rows found no Claude data | cc-by-4.0 (Hub tag; attribution required; per-repo licences all permissive) | TSAI reserves |
+| sft-math-openr1-math-raw | [open-r1/OpenR1-Math-Raw](https://huggingface.co/datasets/open-r1/OpenR1-Math-Raw) | English / Mathematics | DeepSeek-R1 (MIT, open weights) writes the traces; Llama-3.3-70B-Instruct (Llama 3.3 Community Licence) is used only as a verifier | apache-2.0 (Hub tag; commercial use permitted per tag; inherits NuminaMath-1.5 overlap, keep rows with a passing `correctness` flag) | TSAI reserves |
+| sft-chat-puffin | [LDJnr/Puffin](https://huggingface.co/datasets/LDJnr/Puffin) | English / Chat | GPT-4 (OpenAI, proprietary closed) writes every response | apache-2.0 (Hub tag; the OpenAI terms on GPT-4 output still apply) | excluded |
+| sft-code-opencodeinstruct | [nvidia/OpenCodeInstruct](https://huggingface.co/datasets/nvidia/OpenCodeInstruct) | Code (Python) | Qwen2.5-32B-Instruct (Apache-2.0) writes the instructions; Qwen2.5-Coder-32B-Instruct (Apache-2.0) writes the solutions, the unit tests and the quality scores (arXiv 2504.04030; the card itself names no model) | cc-by-4.0 (Hub tag and card text; "ready for commercial/non-commercial use") | TSAI reserves |
+| sft-stem-code-acereason-1.1-sft | [nvidia/AceReason-1.1-SFT](https://huggingface.co/datasets/nvidia/AceReason-1.1-SFT), `source` in {OpenMathReasoning, OpenCodeReasoning, TACO, apps} | English / Mathematics and Code (Python) | DeepSeek-R1 (MIT) writes every response; these prompts are human competition problems or come from sets already `TSAI reserves` in this table | cc-by-4.0 (Hub tag and card text; commercial use permitted per tag) | TSAI reserves |
+| sft-stem-code-acereason-1.1-sft-other | [nvidia/AceReason-1.1-SFT](https://huggingface.co/datasets/nvidia/AceReason-1.1-SFT), `source` in {NuminaMath-CoT, MagicoderEvolInstruct, opc-sft-stage2, leetcode} | English / Mathematics and Code (Python) | DeepSeek-R1 (MIT) writes the responses, but the prompts come from GPT-4 / GPT-4o text (NuminaMath-CoT, Magicoder Evol-Instruct), from a set whose card names no generator (opc-sft-stage2), or from LeetCode problem text with no stated licence | cc-by-4.0 (Hub tag) on the release; upstream prompt licences closed or unstated | excluded |
+| sft-chat-dolci-think-sft | [allenai/Dolci-Think-SFT](https://huggingface.co/datasets/allenai/Dolci-Think-SFT), `source` in {OpenThoughts3, WildChat, OpenAssistant Guanaco, Aya} | English / Math, Code, Chat; some multilingual rows via Aya | DeepSeek-R1 and R1-0528 (MIT) write the traces over human WildChat, OASST1 and Aya prompts; the OpenThoughts3 rows are the existing QwQ-32B (Apache-2.0) traces | odc-by (Hub tag; card adds "intended for research and educational use" under Ai2's Responsible Use Guidelines, a statement of intent, not a licence term) | TSAI reserves |
+| sft-chat-dolci-think-sft-other | [allenai/Dolci-Think-SFT](https://huggingface.co/datasets/allenai/Dolci-Think-SFT), all other `source` values | English / Instruction following, Python, Safety, Tables | Three new Ai2 subsets (Think Persona IF, Precise IF, Think Python; about 823k rows) name no generator; SYNTHETIC-2 has no licence on its own card; Nemotron-Post-Training-v1 code is `excluded` above; WildGuardMix, WildJailbreak and CoCoNot prompts were written by GPT-4 or unnamed models; TableGPT synthesis method not verified | odc-by (Hub tag) on the release; upstream licences or generators unstated | excluded |
+| sft-agentic-apigen-mt-5k | [Salesforce/APIGen-MT-5k](https://huggingface.co/datasets/Salesforce/APIGen-MT-5k) | English / Tool use (retail, airline) | GPT-4o (OpenAI, proprietary closed) and DeepSeek-V3 (MIT) write the agent and simulated-user turns (arXiv 2504.03601) | cc-by-nc-4.0 (Hub tag; non-commercial; card: "for research purposes only") | excluded |
+| sft-agentic-toucan | [Agent-Ark/Toucan-1.5M](https://huggingface.co/datasets/Agent-Ark/Toucan-1.5M) | English / Tool use (MCP agent trajectories) | GPT-OSS-120B (Apache-2.0), Kimi-K2 (Modified MIT) and Qwen3-32B (Apache-2.0) write the trajectories, one config each; tasks by Mistral-Small, DevStral-Small, GPT-OSS, Kimi-K2 and Qwen3-32B; Kimi-K2 annotates and GPT-OSS-120B judges (arXiv 2510.01179); all open weights | apache-2.0 (Hub tag; commercial use permitted per tag) | TSAI reserves |
+| sft-tool-when2call | [nvidia/When2Call](https://huggingface.co/datasets/nvidia/When2Call) | English / Tool use (when to call, ask or decline) | Mixtral-8x22B (Apache-2.0) rewrites questions and answers built on APIGen (xLAM) data, which includes DeepSeek-V2-Chat rows (DeepSeek Licence); rows carry no generator field | cc-by-4.0 (Hub tag; attribution needed); `train_sft` and `train_pref` only, the test split is built from BFCL v2 Live | needs TSAI decision |
+| sft-indic-indic-instruct-hi | [ai4bharat/indic-instruct-data-v0.1](https://huggingface.co/datasets/ai4bharat/indic-instruct-data-v0.1) | Hindi (`wikihow` and `nmt-seed` subsets only) | none: `wikihow` is native Hindi wikiHow text, `nmt-seed` is human-made BPCC-Human en-hi pairs; the other subsets (Llama-2-70B in `anudesh`, closed models in `lm_sys` and `hh-rlhf`) are not part of this set | no Hub tag; per-subset licences stated in arXiv 2401.15006: `wikihow` CC-0, `nmt-seed` CC-BY-4.0 | TSAI reserves |
+| sft-indic-updesh | [microsoft/Updesh_beta](https://huggingface.co/datasets/microsoft/Updesh_beta) | 13 Indic languages incl. Odia | Qwen3-235B-A22B (Updesh-G); Llama-3.1-405B-Instruct (translation) and Llama 3.3 70B (back-translation quality check) named; reasoning part translated from Microsoft Orca sets | other: Microsoft Research License (non-commercial research use only, no redistribution) | excluded |
 
 ### Stage 2: Preference optimization and RLVR
 
@@ -96,10 +118,12 @@ Three stages. Sets marked `excluded` stay in the table with the reason and are n
 | --- | --- | --- | --- | --- | --- |
 | rl-code-r2e-gym | [R2E-Gym/R2E-Gym-Subset](https://huggingface.co/datasets/R2E-Gym/R2E-Gym-Subset) | Code (Python SWE) | Unknown in main text (tests and issues are LLM-generated by back-translation from commits, arXiv 2504.07164; generator model not stated on the card) | apache-2.0 (Hub tag; commercial use permitted per tag) | excluded |
 | rl-code-swe-gym | [SWE-Gym/SWE-Gym](https://huggingface.co/datasets/SWE-Gym/SWE-Gym) | Code (Python SWE) | none (real GitHub issues and unit tests; execution-verified) | mit (Hub tag; commercial use permitted per tag) | TSAI reserves |
+| rl-code-swe-envs-g10 | `teams/10-post-training/swe-envs/` (21 envs, each one merged upstream GitHub PR from 2018 to 2022 that closes a human issue) | Code (Python SWE, Go) | none (issue text, fix and tests are the upstream human issue and PR; only the harness, Dockerfile and verify script, is written with a model, which TSAI confirmed on 4 Nov is fine) | each repo's own licence, recorded in every `env.json`: MIT (12 envs), BSD-3-Clause (9 envs) | allowed (TSAI, 4 Nov) |
+| rl-code-swe-rebench | [nebius/SWE-rebench](https://huggingface.co/datasets/nebius/SWE-rebench) (pre-2023 rows, human parts only) | Code (Python SWE) | none for the parts we use (issue, patch and tests come from real PRs); Qwen2.5-72B-Instruct wrote the install recipes and quality labels, which we do not use (arXiv 2505.20411) | cc-by-4.0 (Hub tag; attribution needed); each repo keeps its own licence, permissive repos only | allowed (TSAI, 4 Nov: human parts only, every env rebuilt and gold-checked by us) |
 | rl-code-acecode-87k | [TIGER-Lab/AceCode-87K](https://huggingface.co/datasets/TIGER-Lab/AceCode-87K) | Code (Python) | GPT-4o-mini (OpenAI, proprietary closed) rewrote the questions | mit (Hub tag; commercial use permitted per tag) | excluded |
-| rl-code-deepcoder | [agentica-org/DeepCoder-Preview-Dataset](https://huggingface.co/datasets/agentica-org/DeepCoder-Preview-Dataset) | Code (competitive) | none (human competition problems and execution unit tests collected from existing sets) | mit (Hub tag; commercial use permitted per tag) | TSAI reserves |
+| rl-code-deepcoder | [agentica-org/DeepCoder-Preview-Dataset](https://huggingface.co/datasets/agentica-org/DeepCoder-Preview-Dataset) | Code (competitive) | none (human competition problems and execution unit tests collected from existing sets) | mit (Hub tag; commercial use permitted per tag) | allowed (TSAI, 6 Nov: train split only; decontaminated, see rl/decontam_report.md) |
 | rl-code-swe-rebench-v2 | [nebius/SWE-rebench-V2](https://huggingface.co/datasets/nebius/SWE-rebench-V2) | Code (20 languages incl. Go) | Qwen3-Coder-480B-A35B-Instruct (Apache-2.0) for installation agent; quality labels from gpt-oss-120b (Apache-2.0), GLM-4.7 (MIT) and DeepSeek-V3.2 (MIT) (arXiv 2602.23866) | cc-by-4.0 (Hub tag; commercial use permitted per tag) | TSAI reserves |
-| rl-code-codeforces | [open-r1/codeforces](https://huggingface.co/datasets/open-r1/codeforces) | Code (competitive) | none for problems (human Codeforces problems); DeepSeek-R1 (MIT) for generated test inputs | cc-by-4.0 (Hub tag; commercial use permitted per tag) | TSAI reserves |
+| rl-code-codeforces | [open-r1/codeforces](https://huggingface.co/datasets/open-r1/codeforces) | Code (competitive) | none for problems (human Codeforces problems); DeepSeek-R1 (MIT) for generated test inputs | cc-by-4.0 (Hub tag; commercial use permitted per tag) | allowed (TSAI, 6 Nov: train split only; G9 checks the RL pool against its Codeforces benchmark) |
 | rl-math-dapo-17k | [BytedTsinghua-SIA/DAPO-Math-17k](https://huggingface.co/datasets/BytedTsinghua-SIA/DAPO-Math-17k) | English / Mathematics | Unknown (an unnamed LLM rewrote competition questions so the answer is an integer, arXiv 2503.14476) | apache-2.0 (Hub tag; commercial use permitted per tag) | excluded |
 | rl-math-big-math | [SynthLabsAI/Big-Math-RL-Verified](https://huggingface.co/datasets/SynthLabsAI/Big-Math-RL-Verified) | English / Mathematics | Llama-3.1-405B / Llama-3.1-70B / Llama-3.1-8B (Llama 3.1 Community Licence) and gpt-4o-mini (OpenAI, closed) (arXiv 2502.17387) | apache-2.0 (Hub tag; commercial use permitted per tag) | excluded |
 | rl-math-deepmath-103k | [zwhe99/DeepMath-103K](https://huggingface.co/datasets/zwhe99/DeepMath-103K) | English / Mathematics | DeepSeek-R1 (MIT, open weights) | mit (Hub tag; commercial use permitted per tag) | TSAI reserves |
@@ -114,6 +138,13 @@ Three stages. Sets marked `excluded` stay in the table with the reason and are n
 | rl-community-alignment | [facebook/community-alignment-dataset](https://huggingface.co/datasets/facebook/community-alignment-dataset) | Hindi, English, French, Italian, Portuguese | Llama-based candidate generation (Llama licence) and unnamed response generators on card | CC-BY-4.0 | excluded |
 | rl-safety-hh-rlhf | [Anthropic/hh-rlhf](https://huggingface.co/datasets/Anthropic/hh-rlhf) | English | Anthropic 52B context-distilled / RLHF models (Anthropic, proprietary closed) | MIT | excluded |
 | rl-safety-alignment-faking | [Anthropic/alignment-faking-rl](https://huggingface.co/datasets/Anthropic/alignment-faking-rl) | English | Anthropic Claude 3.5 Sonnet / Opus 3 / Sonnet 4 (Anthropic, proprietary closed) | CC-BY-4.0 (body link; Hub tag is cc) | excluded |
+| rl-code-code-contests | [deepmind/code_contests](https://huggingface.co/datasets/deepmind/code_contests) | Code (competitive; Python, C++, Java) | none (human problems and human solutions scraped from Codeforces, AtCoder, CodeChef, Aizu and HackerEarth; extra tests are made by programmatic mutation of existing inputs and checked against known-correct solutions, no LLM) | cc-by-4.0 (Hub tag; commercial use permitted per tag; upstream site content scraped) | allowed (TSAI, 6 Nov) |
+| rl-code-r2e-gym-v1 | [R2E-Gym/R2E-Gym-V1](https://huggingface.co/datasets/R2E-Gym/R2E-Gym-V1) | Code (Python SWE) | Unknown (issues and some tests are LLM-generated by back-translation from commits, arXiv 2504.07164; generator model not stated; card body empty) | apache-2.0 (Hub tag; commercial use permitted per tag) | excluded |
+| rl-code-afm-codeagent | [PersonalAILab/AFM-CodeAgent-RL-Dataset](https://huggingface.co/datasets/PersonalAILab/AFM-CodeAgent-RL-Dataset) | Code and math | none in this release (problems with tests or answers, repackaged from LiveCodeBench v1–v3, Skywork-OR1-RL-Data and DAPO-Math; the DAPO slice and the NuminaMath-1.5 subsets in the Skywork math slice are excluded in this table) | apache-2.0 (Hub tag; commercial use permitted per tag) | excluded |
+| rl-code-leetcodedataset | [newfacade/LeetCodeDataset](https://huggingface.co/datasets/newfacade/LeetCodeDataset) | Code (Python) | Unknown for test inputs (an unnamed "LLM" wrote them, arXiv 2504.14655, Figs 4–5); outputs come from human canonical solutions; SFT responses by Qwen2.5-Coder-32B-Instruct (Apache-2.0) | apache-2.0 (Hub tag); MIT on GitHub; problem text belongs to LeetCode; pending until the test-input generator is known | needs TSAI decision |
+| rl-math-processbench | [Qwen/ProcessBench](https://huggingface.co/datasets/Qwen/ProcessBench) | English / Mathematics (step verification) | Not on the card; the paper (arXiv 2412.06559, Table 4) names 12 Qwen2/Qwen2.5 and Llama-3/3.1 Instruct models; step errors labelled by human experts | apache-2.0 (Hub tag); eval only, not training data (G9 evaluation probe) | excluded |
+| rl-math-deepscaler | [agentica-org/DeepScaleR-Preview-Dataset](https://huggingface.co/datasets/agentica-org/DeepScaleR-Preview-Dataset) | English / Mathematics (competition) | none for problems and solutions (human AIME 1984-2023, AMC before 2023, Omni-MATH, Still); gemini-1.5-pro-002 (Google, proprietary closed) is used in the preprocessing code as a proof-problem filter and difficulty judge; the Still rows (MATH, NuminaMath-CoT, AIME) have no stated licence and the release has no `source` column to drop them | mit (Hub tag) on the release; Still source licence unstated | excluded |
+| rl-safety-aya-redteaming | [CohereLabs/aya_redteaming](https://huggingface.co/datasets/CohereLabs/aya_redteaming) | Hindi (`aya_hin`, 915 prompts); 7 other languages not used | none: harmful prompts written by paid human annotators; prompts only, no responses | apache-2.0 (Hub tag; commercial use permitted per tag) | TSAI reserves |
 
 ---
 
@@ -208,6 +239,7 @@ Three stages. Sets marked `excluded` stay in the table with the reason and are n
 - **Language:** `Hindi` (`hin_Deva`)
 - **Source:** HPLT 3.0 monolingual, sorted release: `data.hplt-project.org/three/sorted/hin_Deva` (web crawl from Internet Archive and Common Crawl; catalogue at `hplt-project.org/datasets/v3.0`)
 - **Licence:** `CC0-1.0` for the **packaging only**. HPLT's Terms of Use: "We do not own any of the text from which these text data has been extracted" and "We license the actual packaging of these text data under the Creative Commons CC0 license". The underlying web text keeps its original copyright (no per-document licence is given). HPLT 3.0 filters robots.txt opt-outs and removes sources on a takedown request in the next release.
+- **Generator model:** none (web crawl). The pages are written by their publishers, not by a model chosen for this set; a single page may still be machine-translated or model-written, which the diagnosis codes (D4, D5) mark row by row.
 - **Decision:** `TSAI reserves`. Commercial use of the collection is allowed (CC0). For the web text itself, treat it like every other web-crawl source: honour robots.txt opt-outs and takedown requests, keep each document's source URL so it can be removed, and do not redistribute raw text.
 
 ### 9. Ranjani Chandrasekaran — Indic web (`ind-hi-indiccorp`)
@@ -252,7 +284,7 @@ Three stages. Sets marked `excluded` stay in the table with the reason and are n
 
 Chat-formatted dialogues, reasoning traces and tool or agent trajectories for coding, Indic languages, math and science. Each entry has the standard fields, `TSAI reserves` as the decision (`excluded` where TSAI ruled a set out), and one line of opinion. Licence values are the Hugging Face tags read on 29 Oct 2026; a tag is not legal clearance. Per-dataset notes, 20-row samples and a benchmark-overlap check are in [team10-datasets](https://github.com/RaviNaik/ERA/tree/main/v5/capstone/team10-datasets).
 
-Twenty-three sets in the two stage sections are `excluded`: eleven earlier ones (six named by TSAI, and five more where a closed OpenAI or Llama model made part of the data: `sft-code-magicoder-oss`, `sft-indic-indic-align`, `sft-math-numinamath-cot`, `sft-rl-code-rstar-coder`, `rl-math-big-math`), nine added on 1 Nov for closed-model, Llama or custom-licence reasons, and three added in the 2 Nov review (`sft-math-numinamath-1.5`, `sft-agentic-nemotron-sft-agentic-v2-other`, `sft-indic-aya-collection-other`). Two CC-BY-SA sets (`sft-math-nemotron-proofs`, `sft-math-nemotron-math-v2`) are `allowed (CC-BY-SA, attribution needed)` after TSAI's update that CC-BY-SA data is allowed with attribution. `rl-code-deepcoder` and `sft-science-nemotron-science` go to G9 (Evaluation) for a decontamination test before any use.
+Twenty-three sets in the two stage sections are `excluded`: eleven earlier ones (six named by TSAI, and five more where a closed OpenAI or Llama model made part of the data: `sft-code-magicoder-oss`, `sft-indic-indic-align`, `sft-math-numinamath-cot`, `sft-rl-code-rstar-coder`, `rl-math-big-math`), nine added on 1 Nov for closed-model, Llama or custom-licence reasons, and three added in the 2 Nov review (`sft-math-numinamath-1.5`, `sft-agentic-nemotron-sft-agentic-v2-other`, `sft-indic-aya-collection-other`). Two CC-BY-SA sets (`sft-math-nemotron-proofs`, `sft-math-nemotron-math-v2`) are `allowed (CC-BY-SA, attribution needed)` after TSAI's update that CC-BY-SA data is allowed with attribution. `sft-science-nemotron-science` goes to G9 (Evaluation) for a decontamination test before any use. `rl-code-swe-envs-g10` and `rl-code-swe-rebench` are `allowed` after TSAI's 4 Nov answer on SWE environments (human issue, patch and tests only; every env rebuilt and gold-checked by us). `rl-code-deepcoder`, `rl-code-codeforces` and `rl-code-code-contests` are `allowed` after TSAI's 6 Nov answer (train splits only), and their decontamination results are in `rl/decontam_report.md`.
 
 ### `sft-code-commitpackft` — commitpackft
 
@@ -426,7 +458,7 @@ Twenty-three sets in the two stage sections are `excluded`: eleven earlier ones 
 - **Source:** [`nvidia/OpenCodeReasoning-2`](https://huggingface.co/datasets/nvidia/OpenCodeReasoning-2)
 - **Licence:** `cc-by-4.0` — Hugging Face tag read on 29 Oct 2026. A tag is not legal clearance.
 - **Generator model:** DeepSeek-R1 for solutions, QwQ for critiques (both open weights)
-- **Decision:** `TSAI reserves`
+- **Decision:** `allowed (TSAI admitted, 11 Nov 2026)`
 - **Our opinion:** use, check. Same teacher-terms check as OpenCodeReasoning.
 - **Details and 20-row sample:** [nvidia__OpenCodeReasoning-2](https://github.com/RaviNaik/ERA/tree/main/v5/capstone/team10-datasets/nvidia__OpenCodeReasoning-2)
 
@@ -486,8 +518,32 @@ Twenty-three sets in the two stage sections are `excluded`: eleven earlier ones 
 - **Licence:** `cc-by-4.0` — Hugging Face tag read on 29 Oct 2026. A tag is not legal clearance.
 - **Generator model:** Llama-2-70B-Chat for many parts (Llama), plus translated human prompts; Mistral-7B in some parts
 - **Decision:** `excluded` — TSAI rule in the G10 chat (30 Oct): data made by closed OpenAI, Anthropic, Google or Llama models stays excluded. Applied by us to this set. Reason: Many responses are Llama-2-70B-Chat outputs (Llama).
-- **Our opinion:** excluded under that rule. Ask TSAI if a partial use (for example only the human-written parts) is acceptable.
+- **Our opinion:** excluded under that rule. The two subsets whose text is human-written are listed separately below (`sft-indic-indic-align-oasst-t`, `sft-indic-indic-align-dolly-t`); every other subset stays excluded.
 - **Details and 20-row sample:** [ai4bharat__indic-align](https://github.com/RaviNaik/ERA/tree/main/v5/capstone/team10-datasets/ai4bharat__indic-align)
+
+### `sft-indic-indic-align-oasst-t` — indic-align, `OpenAssistant_T` subset
+
+- **Stage:** SFT
+- **Set:** `sft-indic-indic-align-oasst-t`
+- **Language:** 14 Indic languages, native script and romanised. G10 uses the native-script columns of the ten proposal languages (`hin_Deva`, `mar_Deva`, `tam_Taml`, `tel_Telu`, `kan_Knda`, `ben_Beng`, `guj_Gujr`, `mal_Mlym`, `ory_Orya`, `pan_Guru`).
+- **Source:** [`ai4bharat/indic-align`](https://huggingface.co/datasets/ai4bharat/indic-align), file `indicalign-instruct/oasst/oasst.parquet` (19,909 conversations). The card: "Translated and Romanised version of OpenAssistant v1".
+- **Licence:** `cc-by-4.0` (Hub tag of indic-align) — read on 6 Nov 2026. The source [`OpenAssistant/oasst1`](https://huggingface.co/datasets/OpenAssistant/oasst1) is `apache-2.0`. A tag is not legal clearance.
+- **Generator model:** None for the text: oasst1 prompts and replies are written by human volunteers. Translation: IndicTrans2 (AI4Bharat, open weights, `mit` on [`ai4bharat/indictrans2-en-indic-1B`](https://huggingface.co/ai4bharat/indictrans2-en-indic-1B)). Not a Llama, closed or use-restricted model.
+- **Decision:** `TSAI reserves`
+- **Our opinion:** use. It is the only multi-turn, human-written Indic chat set that passes the rule: 12,686 of 19,909 conversations have two or more assistant turns. Machine translation errors are visible (product names translated literally, for example the SID sound chip as "side sound chip"; one number changed in the Urdu column), so do not use it for translation quality. In the `_Latn` columns the turn order is not reliable; use native script only. `sft/convert.py` takes one language per conversation (by `doc_id`), so the ten translations of one conversation are not all trained.
+- **Details:** converted with `sft/convert.py --set sft-indic-indic-align-oasst-t`: 19,909 of 19,909 rows written, 0 skipped, all at effort `1k`; content sha256 of the full run `d672b433316d…`. `sft/decontam_run.py` on 6 Nov, fingerprints v2 full set (`set_sha256 2826a3b8…`): 9 flagged (`in22_conv`, `hle`), 0 canary, 19,900 kept, every reconciliation check passed.
+
+### `sft-indic-indic-align-dolly-t` — indic-align, `Dolly_T` subset
+
+- **Stage:** SFT
+- **Set:** `sft-indic-indic-align-dolly-t`
+- **Language:** 14 Indic languages, native script and romanised (same columns as above)
+- **Source:** [`ai4bharat/indic-align`](https://huggingface.co/datasets/ai4bharat/indic-align), file `indicalign-instruct/dolly/Dolly.parquet` (15,011 rows). The card: "Translated and Romanised version of Dolly-15K".
+- **Licence:** `cc-by-4.0` (Hub tag of indic-align) — read on 6 Nov 2026. The source [`databricks/databricks-dolly-15k`](https://huggingface.co/datasets/databricks/databricks-dolly-15k) is `cc-by-sa-3.0`: share-alike, attribution needed. A tag is not legal clearance.
+- **Generator model:** None for the text (human-written by Databricks employees). Translation: IndicTrans2 (`mit`, open weights).
+- **Decision:** `allowed (CC-BY-SA, attribution needed)`, as for `sft-dolly-15k`
+- **Our opinion:** use only the rows that never had a context. The translation drops Dolly's `context` field: of the 4,456 Dolly rows with a context passage, 4,455 appear in `Dolly_T` with the question only (1,765 `closed_qa`, 1,504 `information_extraction`, 1,186 `summarization`). Trained as they are, they teach answers about a passage the model never sees. In the `_Latn` columns the answer comes before the question. `sft/convert.py` keeps a row only if its English question matches a `databricks-dolly-15k` row with no context (read from that set's Hub file).
+- **Details:** 9 Nov, full set: 10,541 of 15,011 rows kept by the filter (4,455 had a context, 15 do not match a Dolly question exactly), 0 skipped, all at effort `1k`, content sha256 `3af21a7c294c…`. `sft/decontam_run.py`, fingerprints v2 full set (`set_sha256 2826a3b8…`): 0 flagged, 0 canary, 10,541 kept.
 
 ### `sft-indic-samvaad-hi` — samvaad-hi-v1
 
@@ -792,6 +848,251 @@ Twenty-three sets in the two stage sections are `excluded`: eleven earlier ones 
 - **Decision:** `TSAI reserves`
 - **Our opinion:** Training purpose: safe-response SFT, jailbreak resistance, reduced over-refusal, bias and leakage mitigation. Generator: English teacher undisclosed; Riva translates. Subset/source relationship: English matches Safety-v1, with six new translation languages and no Indic language. Prompts reuse AEGIS 2.0, Gretel Safety Alignment v1 and HarmfulTasks; original answers are replaced. The card reports 130,350 examples (43,521 English). Avoid duplicate v1/translated content across splits. Kolibri use is not confirmed by the report. TSAI decides use. Source check: 2026-11-03; [publisher card at revision 8a40a63c9a1a340874b874f980953be53bff0a07](https://huggingface.co/datasets/nvidia/Nemotron-SFT-Safety-v2/blob/8a40a63c9a1a340874b874f980953be53bff0a07/README.md).
 
+### `sft-code-nemotron-opencode` — Nemotron-SFT-OpenCode-v1
+
+- **Stage:** SFT
+- **Set:** `sft-code-nemotron-opencode`
+- **Language:** English / Code (agentic CLI, tool use, agent skills)
+- **Source:** [`nvidia/Nemotron-SFT-OpenCode-v1`](https://huggingface.co/datasets/nvidia/Nemotron-SFT-OpenCode-v1)
+- **Licence:** `cc-by-4.0` — Hugging Face tag and card. The card says it is ready for commercial use. Attribution is needed.
+- **Generator model:** gpt-oss-120b (Apache-2.0) writes the questions and agent skills; Qwen3-Coder-480B-A35B-Instruct (Apache-2.0) writes the agentic solution traces and also simulates the user answers in the `question_tool` subsets. Both are open weights.
+- **Decision:** `TSAI reserves` — passes the 3 Nov TSAI generator rule: every generator named on the card is an open-weight model under Apache-2.0, and no closed or Llama model appears.
+- **Our opinion:** use. Six subsets (`general`, `bash_only_tool`, `bash_only_tool_skills`, `agent_skills`, `question_tool`, `agent_skills_question_tool`). The data is synthetic and not execution-verified on the card, so the Team 9 decontamination test is still needed.
+- **Added by:** Tanmay Sharma (Week 2 rotation, 4 Nov 2026). Hugging Face cards and generator-model pages read on 4 Nov 2026. A tag is not legal clearance.
+
+### `sft-code-nemotron-cuda` — Nemotron-SFT-CUDA-v1
+
+- **Stage:** SFT
+- **Set:** `sft-code-nemotron-cuda`
+- **Language:** English / Code (CUDA kernels)
+- **Source:** [`nvidia/Nemotron-SFT-CUDA-v1`](https://huggingface.co/datasets/nvidia/Nemotron-SFT-CUDA-v1)
+- **Licence:** `cc-by-4.0` — Hugging Face tag and card; the card says ready for commercial use. Attribution is needed.
+- **Generator model:** GLM-4.7 (MIT, open weights) inside an OpenCode agent writes the problems and, in a second pass, the solutions. The seed code comes from `nvidia/Nemotron-Pretraining-Code-v2` CUDA files, which the card describes as permissively licensed.
+- **Decision:** `TSAI reserves` — passes the 3 Nov TSAI generator rule: the only generator is an open-weight MIT model, and each kept trace passes hidden tests with no Compute-Sanitizer errors (execution-verified).
+- **Our opinion:** use. Small set (about 1K to 10K rows). The seed files keep their own per-file licences and the card does not list them, so keep the source reference per row for attribution.
+- **Added by:** Tanmay Sharma (Week 2 rotation, 4 Nov 2026). Hugging Face cards and generator-model pages read on 4 Nov 2026. A tag is not legal clearance.
+
+### `sft-math-nemotron-sft-math-v4` — Nemotron-SFT-Math-v4
+
+- **Stage:** SFT
+- **Set:** `sft-math-nemotron-sft-math-v4`
+- **Language:** English / Mathematics
+- **Source:** [`nvidia/Nemotron-SFT-Math-v4`](https://huggingface.co/datasets/nvidia/Nemotron-SFT-Math-v4)
+- **Licence:** `cc-by-4.0` for AoPS-derived samples and `cc-by-sa-4.0` for Math StackExchange-derived samples (card terms; Hub tags list both). Attribution is needed, and share-alike applies to the StackExchange part.
+- **Generator model:** DeepSeek-V4-Pro (MIT, open weights) in High mode writes every solution. The problems are human-written, taken from `nvidia/Nemotron-Math-v2` (AoPS and Math StackExchange / MathOverflow). Only solutions whose final answer matches the reference answer are kept.
+- **Decision:** `allowed (CC-BY-SA, attribution needed)` — TSAI ruling (G10 chat, 30 Oct): CC-BY-SA data is allowed with attribution when a permissive model made it. DeepSeek-V4-Pro is MIT, so it passes the 3 Nov generator rule.
+- **Our opinion:** use, with attribution. The card calls this a direct replacement for `Nemotron-SFT-Math-v3`, so use v4 and not both.
+- **Added by:** Tanmay Sharma (Week 2 rotation, 4 Nov 2026). Hugging Face cards and generator-model pages read on 4 Nov 2026. A tag is not legal clearance.
+
+### `sft-math-nemotron-proofs-v3-sft` — Nemotron-Math-Proofs-v3-SFT
+
+- **Stage:** SFT
+- **Set:** `sft-math-nemotron-proofs-v3-sft`
+- **Language:** English / Mathematics (proofs)
+- **Source:** [`nvidia/Nemotron-Math-Proofs-v3-SFT`](https://huggingface.co/datasets/nvidia/Nemotron-Math-Proofs-v3-SFT)
+- **Licence:** `cc-by-4.0` — Hugging Face tag and card. The card gives one licence label, `cc-by-4.0`, for every sample. Attribution is needed.
+- **Generator model:** DeepSeek-V4-Pro (MIT, open weights) in Max mode writes all four trace types (proof generation, proof refinement, verification, meta-verification). The 15,879 source problems are human-written AoPS proof problems from `nvidia/Nemotron-Math-Proofs-v1`.
+- **Decision:** `TSAI reserves` — passes the 3 Nov TSAI generator rule: the only generator is an open-weight MIT model and the problems are human-written.
+- **Our opinion:** use. 414,890 samples over 15,818 unique problems. Proof correctness is judged by model verifier traces, not by execution, so treat the traces as unverified proofs. The same problems appear in `sft-math-nemotron-proofs`, so de-duplicate by problem.
+- **Added by:** Tanmay Sharma (Week 2 rotation, 4 Nov 2026). Hugging Face cards and generator-model pages read on 4 Nov 2026. A tag is not legal clearance.
+
+### `sft-code-swe-zero-openhands` — SWE-Zero-openhands-trajectories
+
+- **Stage:** SFT
+- **Set:** `sft-code-swe-zero-openhands`
+- **Language:** Code (agent trajectories)
+- **Source:** [`nvidia/SWE-Zero-openhands-trajectories`](https://huggingface.co/datasets/nvidia/SWE-Zero-openhands-trajectories)
+- **Licence:** `cc-by-4.0` — Hugging Face tag read on 3 Nov 2026. A tag is not legal clearance. Attribution must go in the model card.
+- **Generator model:** Qwen3-Coder-480B-A35B-Instruct (Apache-2.0, open weights) via OpenHands, per the card. R2E-Gym issue statements were also written by Qwen3-Coder.
+- **Decision:** `TSAI reserves`
+- **Our opinion:** use. Same generator as `sft-code-swe-rebench-openhands`. The Claude-vs-Qwen audit is clean.
+- **Audit (3 Nov 2026):** the dataset has no per-row field naming the generating model, so every row was checked. All 64 parquet shards, 318,115 trajectories (SWE-Fixer-Train-110K 128,628; SWE-Gym-Raw 128,176; SWE-rebench 51,808; R2E-Gym-Subset 9,503). Every row has the same OpenHands system prompt and the same four tools (`str_replace_editor`, `execute_bash`, `think`, `finish`). No `model_patch` carries a `Co-Authored-By: Claude` or "Generated with Claude Code" line, and no assistant or system message identifies the model as Claude. Four trajectories matched the identity pattern; all are about Anthropic's own API (mlflow, haystack), which is repo subject matter, not the generator. Repo licences: Apache-2.0 129,074; MIT 94,262; BSD-3-Clause 78,484; BSD-2-Clause 15,472; MIT-0 820; BSD-3-Clause-Clear 3. The check is keyword-based and cannot detect Claude text with no identity or attribution marker. The card's "BSD-2-Claude" is a typo for BSD-2-Clause.
+- **Added by:** SomaKorada07 (Week 2 rotation, 4 Nov 2026). Hugging Face cards read on 3 Nov 2026.
+
+### `sft-math-openr1-math-raw` — OpenR1-Math-Raw
+
+- **Stage:** SFT
+- **Set:** `sft-math-openr1-math-raw`
+- **Language:** English / Mathematics
+- **Source:** [`open-r1/OpenR1-Math-Raw`](https://huggingface.co/datasets/open-r1/OpenR1-Math-Raw)
+- **Licence:** `apache-2.0` — Hugging Face tag read on 3 Nov 2026. A tag is not legal clearance.
+- **Generator model:** DeepSeek-R1 (MIT, open weights) writes 1 to 8 traces per problem (516,499 problems, 1,209,403 traces). Two verifiers check them: Math Verify and Llama-3.3-70B-Instruct as judge (Llama 3.3 Community Licence; it only labels, it writes no training text).
+- **Decision:** `TSAI reserves`
+- **Decision note:** inherits NuminaMath-1.5 overlap; keep rows with a passing `correctness` flag. Same decision as `sft-math-openr1-math` (the 220k set), which carries the same NuminaMath-1.5 note.
+- **Our opinion:** use, check. The R1 traces are clean, but the questions come from NuminaMath-1.5, which is `excluded` above because of its GPT-4-Turbo and untraceable sources. TSAI should rule whether R1 traces over those questions are permitted, or whether only the filtered `sft-math-openr1-math` set is kept.
+- **Added by:** SomaKorada07 (Week 2 rotation, 4 Nov 2026; updated 5 Nov after review). Hugging Face cards read on 3 Nov 2026.
+
+### `sft-chat-puffin` — Puffin
+
+- **Stage:** SFT
+- **Set:** `sft-chat-puffin`
+- **Language:** English / Chat
+- **Source:** [`LDJnr/Puffin`](https://huggingface.co/datasets/LDJnr/Puffin)
+- **Licence:** `apache-2.0` — Hugging Face tag read on 3 Nov 2026. A tag is not legal clearance. The card is marked deprecated in favour of Pure-Dove.
+- **Generator model:** GPT-4 (OpenAI, proprietary closed) writes every response in 3,000 multi-turn conversations with real humans.
+- **Decision:** `excluded` — TSAI Week 2 rule: text made by closed OpenAI models is out.
+- **Our opinion:** excluded for the same reason as `sft-code-magicoder-oss`. The Apache-2.0 tag does not remove the OpenAI terms on GPT-4 output.
+- **Added by:** SomaKorada07 (Week 2 rotation, 4 Nov 2026). Hugging Face cards read on 3 Nov 2026.
+
+### `sft-code-swe-fixer` — SWE-Fixer-Train-110K
+
+- **Stage:** SFT
+- **Set:** `sft-code-swe-fixer`
+- **Language:** English issue text / Code (Python SWE: issue to patch)
+- **Source:** [`internlm/SWE-Fixer-Train-110K`](https://huggingface.co/datasets/internlm/SWE-Fixer-Train-110K)
+- **Licence:** `mit` — Hugging Face tag; the card gives no further licence text. Issues, pull requests and code come from Python GitHub repositories with more than 100 pull requests (raw crawl: 2.3K repositories and 331K instances, arXiv 2501.05040v3, Appendix A), which keep their own licences; the paper does not filter repositories by licence.
+- **Generator model:** none. Each row is a real GitHub issue with its hints, the merged PR patch and the test patch (115,406 rows). The paper trained its editor model on chain-of-thought that GPT-4o wrote for a 70K subset; that chain-of-thought is not in this release and must not be added from another source.
+- **Decision:** `TSAI reserves` — passes the 3 Nov TSAI generator rule: human-written, with no model generator.
+- **Our opinion:** use, check. Open point for TSAI: the upstream repository licences are mixed and not listed per row (the same question as the GPL/LGPL files flagged for code-python). Appendix A of arXiv 2501.05040v3 says repositories within SWE-Bench were excluded from the raw crawl; send it to Team 9 for the decontamination test against the other SWE benchmarks we report. Other SWE sets in this table reuse SWE-Fixer-Train prompts, so de-duplicate by `instance_id`.
+- **Added by:** Sagar063 (Week 2 rotation, 4 Nov 2026). Hugging Face card and paper read on 4 Nov 2026. A tag is not legal clearance.
+
+### `sft-code-afm-codeagent` — AFM-CodeAgent-SFT-Dataset
+
+- **Stage:** SFT
+- **Set:** `sft-code-afm-codeagent`
+- **Language:** English / Code and math (multi-agent tool-use trajectories)
+- **Source:** [`PersonalAILab/AFM-CodeAgent-SFT-Dataset`](https://huggingface.co/datasets/PersonalAILab/AFM-CodeAgent-SFT-Dataset)
+- **Licence:** `apache-2.0` — Hugging Face tag.
+- **Generator model:** Unknown. The trajectories are distilled from the OAgents multi-agent framework (arXiv 2508.13167, section 3.2.1). Neither the card nor the paper names the LLM that ran OAgents for the code-agent trajectories; the paper names no backbone for OAgents and only groups it with GPT-4.1-based systems (Section 4.1.2).
+- **Decision:** `excluded` — the generator model is not stated.
+- **Our opinion:** The set also contains LiveCodeBench v1–v3 problems (443 of 59,929 trajectories) next to CodeForces, ReTool-SFT and Skywork-OR1 problems. Reconsider only if OPPO names an open-weight backbone; the LiveCodeBench part would still go to Team 9 first.
+- **Added by:** Sagar063 (Week 2 rotation, 4 Nov 2026). Hugging Face card and paper read on 4 Nov 2026. A tag is not legal clearance.
+
+### `sft-code-swe-hero-openhands` — SWE-Hero OpenHands trajectories
+
+- **Stage:** SFT
+- **Set:** `sft-code-swe-hero-openhands`
+- **Language:** English / Code (Python SWE agent trajectories, OpenHands scaffold)
+- **Source:** [`nvidia/SWE-Hero-openhands-trajectories`](https://huggingface.co/datasets/nvidia/SWE-Hero-openhands-trajectories)
+- **Licence:** `cc-by-4.0` — Hugging Face tag and card. The card limits repositories to MIT, Apache-2.0, BSD-2-Clause and BSD-3-Clause and gives each row's repository licence in a `license` column. Attribution is needed.
+- **Generator model:** Qwen3-Coder-480B-A35B-Instruct (Apache-2.0, open weights) writes all trajectories. For the R2E-Gym-Subset tasks it also writes new issue statements that replace the original untraced ones. The SWE-Gym and SWE-rebench issue statements are real GitHub issues. The card names no other model.
+- **Decision:** `TSAI reserves` — passes the 3 Nov TSAI generator rule: the only generator named on the card is an open-weight Apache-2.0 model, as in `sft-code-nemotron-opencode`.
+- **Our opinion:** use, check. 34,269 trajectories over 11,766 issues. For SFT, the regenerated R2E-Gym-Subset issue text makes these trajectories usable. It does not make the R2E-Gym-Subset tasks usable for RL: their tests are the originals, some written by an unnamed LLM. SWE-rebench issues may repeat in other SWE trajectory sets in this table, so de-duplicate by `instance_id`. The Team 9 decontamination test is still needed.
+- **Added by:** Sagar063 (Week 2 rotation, 4 Nov 2026). Hugging Face card read on 4 Nov 2026. A tag is not legal clearance.
+
+### `sft-code-opencodeinstruct` — OpenCodeInstruct
+
+- **Stage:** SFT
+- **Set:** `sft-code-opencodeinstruct`
+- **Language:** Code (Python)
+- **Source:** [`nvidia/OpenCodeInstruct`](https://huggingface.co/datasets/nvidia/OpenCodeInstruct)
+- **Licence:** `cc-by-4.0` — Hugging Face tag read on 10 Nov 2026. The card says "This dataset is licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0)" and "This dataset is ready for commercial/non-commercial use." Permissive with attribution: in under the data licence rule. Attribution must go in the model card. A tag is not legal clearance.
+- **Generator model:** Not named on the card ("Hybrid: Automated, Synthetic"). The paper (arXiv 2504.04030) names them: Qwen2.5-32B-Instruct (Apache-2.0, open weights) writes the coding tasks, and Qwen2.5-Coder-32B-Instruct (Apache-2.0, open weights) writes the solution, ten assertion-style unit tests per question-solution pair, and a quality score. Qwen2.5-32B-Instruct and QwQ-32B-Preview appear only in an ablation. Seeds: 25,443 TACO problems (BAAI/TACO, Apache-2.0; problems scraped from Codeforces, LeetCode, AtCoder, CodeChef and other sites) for the Genetic-Instruct part, and Python functions with docstrings collected from GitHub for the OSS-Instruct part (the seed code is not in the release and its licences are not recorded; only the generated instruction is kept from that step). Each row records `generation_algorithm` and `domain`, so the two parts can be separated.
+- **Decision:** `TSAI reserves` — the generators are Apache-2.0 open-weight models and the licence is permissive, so it passes the data licence rule. Open points for TSAI: the card itself names no model (the generator is known only from the paper; R2E-Gym-Subset was `excluded` on that ground), and the OSS-Instruct rows descend from GitHub seed code we cannot trace, so TSAI may want to keep only the `generation_algorithm` = Genetic-Instruct rows (TACO seeds).
+- **Our opinion:** use, check. 5,000,000 rows, created January to March 2025 and released 28 April 2025. Every row carries `unit_tests`, `tests_execution_status`, `average_test_score` and `llm_judgement`, but the paper says execution was not used to drop rows, so keep only rows that pass all tests and have a top quality score (the paper's own ablation found the quality-score filter best). Problem statements derive from TACO, which overlaps APPS and CodeContests, so send it to G9 (Evaluation) for the decontamination test against HumanEval+, MBPP+ and LiveCodeBench before use. De-duplicate against `sft-code-opencodereasoning` and `sft-stem-code-acereason-1.1-sft`, which also use TACO problems.
+- **Added by:** swatibansal (Week 2 rotation, 11 Nov 2026). Hugging Face cards, papers and repository code read on 10-11 Nov 2026. A tag is not legal clearance.
+
+### `sft-stem-code-acereason-1.1-sft` — AceReason-1.1-SFT, traceable-prompt subsets
+
+- **Stage:** SFT
+- **Set:** `sft-stem-code-acereason-1.1-sft`
+- **Language:** English / Mathematics and Code (Python)
+- **Source:** [`nvidia/AceReason-1.1-SFT`](https://huggingface.co/datasets/nvidia/AceReason-1.1-SFT), rows whose `source` column is OpenMathReasoning (2,147,570), OpenCodeReasoning (763,495), TACO (56,694) or apps (3,736): 2,971,495 rows
+- **Licence:** `cc-by-4.0` — Hugging Face tag read on 10 Nov 2026. The card says "This dataset is licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0)". Permissive with attribution: in under the data licence rule. Attribution must go in the model card. A tag is not legal clearance.
+- **Generator model:** DeepSeek-R1 (MIT, open weights) writes every response ("all responses in the dataset generated by DeepSeek-R1", arXiv 2506.13284, released 16 June 2025). The prompts in these four subsets are human competition problems (TACO, apps) or come from `sft-rl-math-openmathreasoning` and `sft-code-opencodereasoning`, both `TSAI reserves` above. NVIDIA removed rows with a 9-gram overlap with its own math and code benchmarks.
+- **Decision:** `TSAI reserves` — MIT writer, permissive licence, traceable prompts.
+- **Our opinion:** use. The kept rows share prompts with `sft-rl-math-openmathreasoning` and `sft-code-opencodereasoning` (same questions, different R1 samples), so de-duplicate by prompt before mixing. NVIDIA's 9-gram check does not cover our fingerprints v2 list, so G9 runs the decontamination test. The split by `source` follows the `sft-indic-aya-collection` pattern; the other four subsets are `sft-stem-code-acereason-1.1-sft-other` below.
+- **Added by:** swatibansal (Week 2 rotation, 11 Nov 2026). Hugging Face cards, papers and repository code read on 10-11 Nov 2026. A tag is not legal clearance.
+
+### `sft-stem-code-acereason-1.1-sft-other` — AceReason-1.1-SFT, closed-model or untraceable-prompt subsets
+
+- **Stage:** SFT
+- **Set:** `sft-stem-code-acereason-1.1-sft-other`
+- **Language:** English / Mathematics and Code (Python)
+- **Source:** [`nvidia/AceReason-1.1-SFT`](https://huggingface.co/datasets/nvidia/AceReason-1.1-SFT), rows whose `source` column is NuminaMath-CoT (521,171), MagicoderEvolInstruct (27,625), opc-sft-stage2 (323,163) or leetcode (126,878): 998,837 rows
+- **Licence:** `cc-by-4.0` on the release (Hub tag read on 10 Nov 2026), but the prompts carry their upstream terms: NuminaMath-CoT and Magicoder Evol-Instruct contain GPT-4 / GPT-4o text (both `excluded` above); the OpenCoder opc-sft-stage2 card (MIT) names no generator and its `evol_instruct` part is Magicoder Evol-Instruct again; the leetcode prompts are LeetCode problem text with no stated licence.
+- **Generator model:** DeepSeek-R1 (MIT, open weights) writes the responses, but the prompts were written or rewritten by closed OpenAI models (NuminaMath-CoT, Magicoder) or by a model the card does not name (opc-sft-stage2).
+- **Decision:** `excluded` — data licence rule: text made by closed OpenAI models is out; sources we cannot trace are out; unstated licences are out. The same problems would otherwise re-enter through these prompts after being excluded upstream.
+- **Our opinion:** excluded. If TSAI later clears LeetCode problem text (the open question on `rl-code-leetcodedataset`), the 126,878 leetcode rows can move to the kept set; the other three subsets cannot.
+- **Added by:** swatibansal (Week 2 rotation, 11 Nov 2026). Hugging Face cards, papers and repository code read on 10-11 Nov 2026. A tag is not legal clearance.
+
+### `sft-chat-dolci-think-sft` — Dolci-Think-SFT, traceable subsets
+
+- **Stage:** SFT
+- **Set:** `sft-chat-dolci-think-sft`
+- **Language:** English / Math, Code, Chat; some multilingual rows via Aya
+- **Source:** [`allenai/Dolci-Think-SFT`](https://huggingface.co/datasets/allenai/Dolci-Think-SFT), rows whose `source` column is OpenThoughts3 (941,164), WildChat (76,209), OpenAssistant Guanaco (6,647) or Aya (97,156): 1,121,176 rows of 2,253,684
+- **Licence:** `odc-by` — Hugging Face tag read on 10 Nov 2026. The card says "This dataset is licensed under ODC-BY." and adds "It is intended for research and educational use in accordance with Ai2's Responsible Use Guidelines." ODC-By is permissive with attribution, so it is in under the data licence rule; the second sentence is a statement of intent, not a licence term, and is recorded here for TSAI. Upstream prompt licences: OpenThoughts3 Apache-2.0, WildChat-1M ODC-By, OASST1 Apache-2.0, aya_dataset Apache-2.0. Attribution must go in the model card. A tag is not legal clearance.
+- **Generator model:** New traces by "a mix of DeepSeek R1 and DeepSeek R1 0528" (MIT, open weights) over the WildChat, Guanaco and Aya prompts, which are human-written (WildChat prompts are real user messages; OASST1 and Aya are human annotations). The OpenThoughts3 rows reuse the existing QwQ-32B (Apache-2.0) traces from `sft-stem-code-openthoughts3`, extended to 32k context with code prompts downsampled.
+- **Decision:** `TSAI reserves` — permissive licence, MIT or Apache-2.0 writers, human or already-accepted prompts.
+- **Our opinion:** use, check. The OpenThoughts3 rows duplicate `sft-stem-code-openthoughts3`, so take them from one place only. The card describes no decontamination, so G9 runs the test. The Aya rows are a cheap Indic supplement; check script integrity with the G10 text-prep rule first. The split by `source` follows the `sft-indic-aya-collection` pattern; everything else is `sft-chat-dolci-think-sft-other` below.
+- **Added by:** swatibansal (Week 2 rotation, 11 Nov 2026). Hugging Face cards, papers and repository code read on 10-11 Nov 2026. A tag is not legal clearance.
+
+### `sft-chat-dolci-think-sft-other` — Dolci-Think-SFT, untraceable or closed-model subsets
+
+- **Stage:** SFT
+- **Set:** `sft-chat-dolci-think-sft-other`
+- **Language:** English / Instruction following, Python, Safety, Tables
+- **Source:** [`allenai/Dolci-Think-SFT`](https://huggingface.co/datasets/allenai/Dolci-Think-SFT), all other `source` values: Dolci Think Python (466,676), Dolci Think Persona IF (220,530), Dolci Precise IF (135,722), Nemotron-Post-Training-Dataset-v1 code (113,777), SYNTHETIC-2 SFT-verified (104,568), WildJailbreak (40,002), WildGuardMix (36,673), CoCoNot (9,549), TableGPT (4,973), Olmo identity prompts (58): about 1,132,500 rows
+- **Licence:** `odc-by` on the release (Hub tag read on 10 Nov 2026), but the parts carry their own terms. SYNTHETIC-2 SFT-verified has no licence field on the PrimeIntellect card (Ai2 lists it as Apache 2.0; the primary source states none). The Dolci-Think-SFT-Python card is ODC-By but names no generator.
+- **Generator model:** Not stated for the three new Ai2 subsets (Think Python, Think Persona IF, Precise IF; 822,928 rows), on either the Dolci-Think-SFT card or the Dolci-Think-SFT-Python card. SYNTHETIC-2 traces are DeepSeek-R1-0528 (MIT) but its task sources are not stated. The Nemotron-v1 code rows belong to `sft-stem-code-nemotron-post-v1`, `excluded` above. WildGuardMix and WildJailbreak prompts were written by GPT-4 (OpenAI, closed; both `excluded` above). CoCoNot prompts were expanded "by iteratively prompting different LMs" that the paper (arXiv 2407.12043) does not name, and its responses are GPT-4. TableGPT (LipengCS/Table-GPT, MIT) is partly synthesised and the card does not say how. The Dolci traces over these prompts are DeepSeek R1 / R1-0528.
+- **Decision:** `excluded` — data licence rule: sources we cannot trace are out (unnamed generators, unstated task sources), unstated licences are out (SYNTHETIC-2), and text made by closed OpenAI models is out (WildGuardMix, WildJailbreak, CoCoNot prompts).
+- **Our opinion:** excluded. The three new Ai2 subsets (about 823k rows) are the largest loss; if Ai2 documents their generator and it is an open MIT or Apache-2.0 model, they can move to the kept set. Nothing else here can.
+- **Added by:** swatibansal (Week 2 rotation, 11 Nov 2026). Hugging Face cards, papers and repository code read on 10-11 Nov 2026. A tag is not legal clearance.
+
+### `sft-agentic-apigen-mt-5k` — APIGen-MT-5k
+
+- **Stage:** SFT
+- **Set:** `sft-agentic-apigen-mt-5k`
+- **Language:** English / Tool use (multi-turn function calling; retail and airline domains from tau-bench)
+- **Source:** [`Salesforce/APIGen-MT-5k`](https://huggingface.co/datasets/Salesforce/APIGen-MT-5k)
+- **Licence:** `cc-by-nc-4.0` — Hugging Face tag read on 10 Nov 2026 (gated: "Acknowledge to follow the corresponding license and cite APIGen-MT to access the repository"). Non-commercial. The card adds "This release is for research purposes only in support of an academic paper." and "A part of this dataset was generated using GPT-4 and should not be used to develop models that compete with OpenAI."
+- **Generator model:** GPT-4o (OpenAI, proprietary closed) and DeepSeek-V3 (MIT, open weights) write the agent and simulated-user turns (arXiv 2504.03601; the card does not say which model played which role). 5,000 dialogues, verified by format checks, function execution with policy checks and a semantic check; a human review of 200 samples passed 99%.
+- **Decision:** `excluded` — data licence rule: non-commercial licences are out, and text made by closed OpenAI models is out. The research-only clause is a third reason.
+- **Our opinion:** excluded. It is the closest public match to our `<|tool_call|>` multi-turn format, so it is worth recording why it is out. Salesforce's `sft-salesforce-xlam-60k` (single-turn, CC-BY-4.0, Mixtral and DeepSeek-V2 writers) stays the tool-use source. Do not substitute the xLAM-2 models trained on this set either; they carry the same CC-BY-NC terms.
+- **Added by:** swatibansal (Week 2 rotation, 11 Nov 2026). Hugging Face cards, papers and repository code read on 10-11 Nov 2026. A tag is not legal clearance.
+
+### `sft-agentic-toucan` — Toucan-1.5M
+
+- **Stage:** SFT
+- **Set:** `sft-agentic-toucan`
+- **Language:** English / Tool use (multi-turn MCP agent trajectories, Hermes tool format)
+- **Source:** [`Agent-Ark/Toucan-1.5M`](https://huggingface.co/datasets/Agent-Ark/Toucan-1.5M) (card revision `0df3cf37f2`); paper [arXiv 2510.01179](https://arxiv.org/abs/2510.01179)
+- **Licence:** `apache-2.0` — Hugging Face tag read on 8 Nov 2026 and unchanged on 12 Nov 2026; the card: "This dataset is released under Apache 2.0." Permissive: in under the data licence rule. A tag is not legal clearance.
+- **Generator model:** Trajectories: "trajectories generated by Qwen3-32B, Kimi-K2, and GPT-OSS-120B, each stored under separate configurations" (card). Tasks: "five open-source LLMs (Mistral-Small, DevStral-Small, GPT-OSS, Kimi-K2, and Qwen3-32B) as task generators" (paper); quality annotation: "the Kimi-K2 model as the annotator" (paper); trajectory judge: GPT-OSS-120B (paper). GPT-OSS and Qwen3 are Apache-2.0 open weights. Kimi-K2 is open weights under a Modified MIT licence ([`moonshotai/Kimi-K2-Instruct` LICENSE](https://huggingface.co/moonshotai/Kimi-K2-Instruct/blob/main/LICENSE), revision `fd1984e2b7`, read on 12 Nov 2026): MIT, plus a product with more than 100 million monthly active users or more than 20 million US dollars monthly revenue must display "Kimi K2" in its user interface. The paper does not give versions for Mistral-Small and DevStral-Small, so their licences are not verified here. GPT-4o appears in the paper only as the user simulator for tau-bench evaluation, not in the data.
+- **Decision:** `TSAI reserves` — permissive licence; the trajectory writers are gpt-oss (in by name under the data licence rule) and the open-weight Qwen3-32B and Kimi-K2. Open points for TSAI: whether Kimi-K2's Modified MIT attribution term is acceptable (if not, keep only the `OSS` and `Qwen3` configs), and the unstated Mistral-Small / DevStral-Small versions used for task generation.
+- **Our opinion:** use, starting from the `OSS` config (457,130 rows, GPT-OSS-120B trajectories), which matches the "gpt-oss data is in" rule word for word; `Qwen3` (551,613) and `Kimi-K2` (518,516) are also open-weight. The `SFT` config (119,287 rows) is the authors' curated mix; check which generators it holds before using it. Messages are in the Hermes tool format, so `sft/convert.py` needs an adapter to the `<|tool_call|>` format. The tool definitions come from public MCP servers; tool results may contain scraped web text.
+- **For Team 9:** decontaminate against tool-use benchmarks (BFCL, tau-bench) before use.
+- **Added by:** jssunil (Week 2 rotation, 8 Nov 2026). Card and paper read on 8 Nov 2026; card revision re-checked and Kimi-K2 licence read on 12 Nov 2026.
+
+### `sft-tool-when2call` — When2Call
+
+- **Stage:** SFT (`train_sft`, 15,000 rows); `train_pref` (9,000 chosen/rejected pairs) is preference data for Stage 2
+- **Set:** `sft-tool-when2call`
+- **Language:** English / Tool use: when to call a tool, ask a follow-up question, or say the tools cannot answer
+- **Source:** [`nvidia/When2Call`](https://huggingface.co/datasets/nvidia/When2Call) (card revision `0582f7749d`); paper [NAACL 2025](https://aclanthology.org/2025.naacl-long.174/)
+- **Licence:** `cc-by-4.0` — Hugging Face tag and card text read on 8 Nov 2026 and unchanged on 12 Nov 2026. Permissive with attribution: in under the data licence rule. Attribution must go in the model card. A tag is not legal clearance.
+- **Generator model:** Mixtral-8x22B (Apache-2.0, open weights): "We synthetically generate the new data for When2Call in two main steps, using Mixtral 8x22B" (paper §2.2). The training data comes from applying that pipeline "to the APIGen dataset" (§3.3.1), i.e. `Salesforce/xlam-function-calling-60k`, which this table records as Mixtral-8x22B-Instruct plus DeepSeek-V2-Chat (DeepSeek Licence). The released rows have only `tools` and `messages`, so the DeepSeek-made rows cannot be filtered out.
+- **Decision:** `needs TSAI decision` — `sft-salesforce-xlam-60k` is `TSAI reserves` with the note "keep only Mixtral-8x22B-Instruct Apache-2.0 rows if split by generator". When2Call cannot be split that way, so TSAI should rule whether its unsplit rows (some built on DeepSeek-V2-Chat output) are acceptable. If yes, use; if not, excluded.
+- **Our opinion:** use if TSAI accepts the unsplit rows. It is the only set found that trains the "when not to call" behaviour the mix proposal (§3, Tool Use) asks for. The tool specs use a different schema (`"type": "dict"`, Python type names), so `convert.py` needs an adapter.
+- **For Team 9:** the test split (3,952 rows) is built from BFCL v2 Live, a benchmark. Use `train_sft` and `train_pref` only, and check them against BFCL.
+- **Added by:** jssunil (Week 2 rotation, 8 Nov 2026). Card and paper read on 8 Nov 2026; card revision re-checked on 12 Nov 2026.
+
+### `sft-indic-indic-instruct-hi` — indic-instruct-data-v0.1, `wikihow` and `nmt-seed` (Hindi)
+
+- **Stage:** SFT
+- **Set:** `sft-indic-indic-instruct-hi`
+- **Language:** Hindi. This set is the `hi` split of two subsets: `wikihow` (6,055 rows) and `nmt-seed` (50,000 rows).
+- **Source:** [`ai4bharat/indic-instruct-data-v0.1`](https://huggingface.co/datasets/ai4bharat/indic-instruct-data-v0.1) (card revision `82cd1437a0`); the Airavata report [arXiv 2401.15006](https://arxiv.org/abs/2401.15006)
+- **Licence:** The Hub card has no licence tag (still none on 12 Nov 2026); it points to the report. The report gives per-subset licences: `wikihow` "released under the CC-0 license"; `nmt-seed` (BPCC-Human) "released under the CC-BY-4.0 license". Read on 8 Nov 2026. Both are permissive, but the data licence rule puts unstated licences out, and here the licence is stated only in the report, not on the dataset card.
+- **Generator model:** None. `wikihow`: native Hindi wikiHow articles, "human-moderated", turned into completion tasks by the authors. `nmt-seed`: "A multi-domain human-annotated dataset containing 50K bitext English-Hindi translation pairs from BPCC-Human."
+- **Decision:** `TSAI reserves` — human-written text, no generator model, permissive licences per the report. Open point for TSAI: whether a licence stated in the authors' report, with no tag on the card, counts as stated under the data licence rule.
+- **Other subsets (not in this set):** `anudesh` — responses by Llama 2 70B: excluded (Llama). `lm_sys` — LMSYS-Chat-1M responses from 25 models including closed ones, LMSYS licence: excluded. `hh-rlhf` — Anthropic model responses: excluded, as `rl-safety-hh-rlhf`. `dolly` and `oasst1` — IndicTrans2 translations of the same sources as `sft-indic-indic-align-dolly-t` and `sft-indic-indic-align-oasst-t`: not added, to avoid training the same conversations twice. `flan_v2` — the report gives Apache-2.0, but FLAN mixes many source datasets with their own licences: not checked.
+- **Our opinion:** use `wikihow`; it is native Hindi, not translated, and five times the Hindi rows of `sft-indic-aya-dataset` (1,153). `nmt-seed` is translation pairs, not chat: use a small, capped share if TSAI wants translation ability. Both are single-turn, effort `1k`.
+- **Added by:** jssunil (Week 2 rotation, 8 Nov 2026). Card and report read on 8 Nov 2026; card revision re-checked on 12 Nov 2026.
+
+### `sft-indic-updesh` — Updesh_beta
+
+- **Stage:** SFT
+- **Set:** `sft-indic-updesh`
+- **Language:** 13 Indic languages (Assamese, Bengali, Gujarati, Hindi, Kannada, Malayalam, Marathi, Nepali, Odia, Punjabi, Tamil, Telugu, Urdu) and English
+- **Source:** [`microsoft/Updesh_beta`](https://huggingface.co/datasets/microsoft/Updesh_beta) (card revision `73ed1f8e08`)
+- **Licence:** `other` — [Microsoft Research License](https://huggingface.co/datasets/microsoft/Updesh_beta/blob/main/LICENSE.md), read on 8 Nov 2026: "use the Materials solely for non-commercial, non-revenue generating, research purposes" and "you may not distribute the data or your modifications to the data".
+- **Generator model:** Updesh-G (generative part): Qwen3-235B-A22B (card). The card also names two Llama models: Llama-3.1-405B-Instruct for the translation of the reasoning data, and Llama 3.3 70B to translate outputs back to English for the translation-quality check (card, "Translation Quality Assessment"; the back-translations are compared with the source, so as far as the card says that model does not write the released text). The reasoning part (Updesh-R) is selectively translated from Microsoft's Orca-AgentInstruct and OrcaMath sets.
+- **Decision:** `excluded` — data licence rule: non-commercial licences are out. Text made by Llama models is also out, which would exclude the Llama-3.1-405B stage on its own.
+- **Our opinion:** excluded on the licence alone. Recorded because it is a large Indic set with Odia, and it will be proposed again.
+- **Added by:** jssunil (Week 2 rotation, 8 Nov 2026). Card and LICENSE.md read on 8 Nov 2026; card revision re-checked on 12 Nov 2026.
+
 ## Stage 2: Preference optimization and RLVR, candidate sets
 
 Verifiable-answer and test-based sets for RL (math, code, SWE tasks). Each entry has the standard fields, `TSAI reserves` as the decision (`excluded` where TSAI ruled a set out), and one line of opinion. Licence values are the Hugging Face tags read on 29 Oct 2026; a tag is not legal clearance. Per-dataset notes, 20-row samples and a benchmark-overlap check are in [team10-datasets](https://github.com/RaviNaik/ERA/tree/main/v5/capstone/team10-datasets).
@@ -804,8 +1105,8 @@ Verifiable-answer and test-based sets for RL (math, code, SWE tasks). Each entry
 - **Source:** [`R2E-Gym/R2E-Gym-Subset`](https://huggingface.co/datasets/R2E-Gym/R2E-Gym-Subset)
 - **Licence:** `apache-2.0` — Hugging Face tag read on 29 Oct 2026. A tag is not legal clearance.
 - **Generator model:** Not named in the paper's main text (tests and issues are LLM-generated by back-translation from commits, arXiv 2504.07164); check its appendix
-- **Decision:** `TSAI reserves`
-- **Our opinion:** use. Permissive tag, SWE tasks with tests. Compare the repos with SWE-bench repos.
+- **Decision:** `excluded` — TSAI Week 2 rule: sources we cannot trace are out. The issue text and some tests are written by an LLM that the card and paper do not name; this matches the Stage 2 table.
+- **Our opinion:** excluded. Same reasoning as `rl-code-r2e-gym-v1`.
 - **Details and 20-row sample:** [R2E-Gym__R2E-Gym-Subset](https://github.com/RaviNaik/ERA/tree/main/v5/capstone/team10-datasets/R2E-Gym__R2E-Gym-Subset)
 
 ### `rl-code-swe-gym` — SWE-Gym
@@ -819,6 +1120,30 @@ Verifiable-answer and test-based sets for RL (math, code, SWE tasks). Each entry
 - **Decision:** `TSAI reserves`
 - **Our opinion:** use. The Python repos keep their own licences. Compare the 11 repos with SWE-bench.
 - **Details and 20-row sample:** [SWE-Gym__SWE-Gym](https://github.com/RaviNaik/ERA/tree/main/v5/capstone/team10-datasets/SWE-Gym__SWE-Gym)
+
+
+### `rl-code-swe-envs-g10` — G10 SWE environments
+
+- **Stage:** RL
+- **Set:** `rl-code-swe-envs-g10`
+- **Language:** Code (19 Python, 2 Go)
+- **Source:** `teams/10-post-training/swe-envs/`, built by `make_env.py` from merged upstream GitHub PRs (2018 to 2022). Each env keeps the upstream issue text verbatim with its link, the repo and its licence.
+- **Licence:** each repo's own licence, in `env.json.licence`: MIT (12 envs), BSD-3-Clause (9 envs). No repo is in SWE-bench, SWE-bench Multimodal, Live or Pro (`swe-envs/benchmark_repos.txt`).
+- **Generator model:** None. Issue, fix (`gold.patch`) and tests (`test.patch`) are human, from the upstream PR. The Dockerfile and `verify.py` are harness code written with Claude; TSAI confirmed on 4 Nov that harness code is outside the rule because the model never trains on it.
+- **Decision:** `allowed (TSAI, 4 Nov)`
+- **Our opinion:** use as RL environments. Down-weight or skip the 5 envs with `quality_verdict: keep-flagged`.
+
+### `rl-code-swe-rebench` — SWE-rebench
+
+- **Stage:** RL
+- **Set:** `rl-code-swe-rebench`
+- **Language:** Code (Python SWE)
+- **Source:** [`nebius/SWE-rebench`](https://huggingface.co/datasets/nebius/SWE-rebench), rows created before 2023, filtered by `swe-envs/import_pool.py` (permissive repo licence, not a benchmark repo, no AI-tool marker in the issue)
+- **Licence:** `cc-by-4.0`, Hugging Face tag read on 5 Nov 2026. A tag is not legal clearance. Attribution: SWE-rebench by Nebius (arXiv 2505.20411), CC-BY-4.0. Each repo keeps its own licence.
+- **Generator model:** None for the parts we use: issue, patch and tests come from real merged PRs. Qwen2.5-72B-Instruct wrote the install recipes and quality labels; we do not use them, because that model's licence is outside the generator rule.
+- **Decision:** `allowed (TSAI, 4 Nov: human parts only, every env rebuilt and gold-checked by us)`
+- **Our opinion:** use to scale the SWE env pool for RL. Only rows that `make_env.py` rebuilds and `verify.py --check` passes become envs.
+- **Pilot (11 Nov):** 5 envs in `swe-envs/rebench-pilot/`, read from Hub commit `89cdfbab4ab1bd8f5a658bb212d1b63624f4f881`, split `test` (file sha256 values in `rebench-pilot/source_manifest.json`). Issue, fix and tests come from GitHub; from the release only ids, dates, base commit and test lists are read, to compare with the rebuild. Decontamination: fingerprints v2 full set, 15 documents (issue, tests, fix), 0 flagged, 0 canaries. Results: [`results/swe_rebench_pilot.md`](../results/swe_rebench_pilot.md).
 
 ### `rl-code-acecode-87k` — AceCode-87K
 
@@ -840,8 +1165,9 @@ Verifiable-answer and test-based sets for RL (math, code, SWE tasks). Each entry
 - **Source:** [`agentica-org/DeepCoder-Preview-Dataset`](https://huggingface.co/datasets/agentica-org/DeepCoder-Preview-Dataset)
 - **Licence:** `mit` — Hugging Face tag read on 29 Oct 2026. A tag is not legal clearance.
 - **Generator model:** None (problems and tests collected from existing sets)
-- **Decision:** `TSAI reserves`
-- **Our opinion:** use, `train` only. The training set holds 600 LiveCodeBench problems from before 1 Aug 2024 and the `test` data is LiveCodeBench plus CodeElo. Per TSAI, the source name goes to G9 (Evaluation) for a decontamination test; no use before that.
+- **Decision:** `allowed (TSAI, 6 Nov)` — "DeepCoder (MIT) [is] in, train split only. DeepCoder must pass the G9 decontamination test first."
+- **Decontamination (6 Nov):** Team 9's `decontam_check.py`, fingerprints v2, full set: 6,765 of 24,287 train rows flagged and removed (27.9%; LiveCodeBench 4,609, Codeforces 3,609). The `lcbv5` subset is LiveCodeBench itself: 599 of 599 rows flagged, so leave it out entirely. `primeintellect` 24.7% and `taco` 29.0% flagged. Use only the clean rows. Details: [`rl/decontam_report.md`](../rl/decontam_report.md).
+- **Our opinion:** use, `train` only, clean rows only, without the `lcbv5` subset. The `test` data is LiveCodeBench plus CodeElo and is never used.
 - **Details and 20-row sample:** [agentica-org__DeepCoder-Preview-Dataset](https://github.com/RaviNaik/ERA/tree/main/v5/capstone/team10-datasets/agentica-org__DeepCoder-Preview-Dataset)
 
 ### `rl-code-swe-rebench-v2` — SWE-rebench-V2
@@ -864,8 +1190,9 @@ Verifiable-answer and test-based sets for RL (math, code, SWE tasks). Each entry
 - **Source:** [`open-r1/codeforces`](https://huggingface.co/datasets/open-r1/codeforces)
 - **Licence:** `cc-by-4.0` — Hugging Face tag read on 29 Oct 2026. A tag is not legal clearance.
 - **Generator model:** None (Codeforces problems); the card mentions DeepSeek-R1 only for generated test inputs
-- **Decision:** `TSAI reserves`
-- **Our opinion:** use, check. The Codeforces problem text may not be covered by the dataset licence (header CC-BY-4.0, body ODC-By 4.0). Use `train` only.
+- **Decision:** `allowed (TSAI, 6 Nov)` — "open-r1/codeforces (CC-BY-4.0) [is] in, train split only. Codeforces problems are also in the G9 benchmark, so G9 must check the RL pool against it."
+- **Decontamination (6 Nov):** Team 9's `decontam_check.py`, fingerprints v2, full set: 624 of 9,556 train rows flagged and removed (6.5%; Codeforces 498, LiveCodeBench 168, HLE 15). Details: [`rl/decontam_report.md`](../rl/decontam_report.md). G9 to confirm the RL pool once it is chosen.
+- **Our opinion:** use, `train` only, clean rows only. The Codeforces problem text may not be covered by the dataset licence (header CC-BY-4.0, body ODC-By 4.0).
 - **Details and 20-row sample:** [open-r1__codeforces](https://github.com/RaviNaik/ERA/tree/main/v5/capstone/team10-datasets/open-r1__codeforces)
 
 ### `rl-math-dapo-17k` — DAPO-Math-17k
@@ -876,8 +1203,8 @@ Verifiable-answer and test-based sets for RL (math, code, SWE tasks). Each entry
 - **Source:** [`BytedTsinghua-SIA/DAPO-Math-17k`](https://huggingface.co/datasets/BytedTsinghua-SIA/DAPO-Math-17k)
 - **Licence:** `apache-2.0` — Hugging Face tag read on 29 Oct 2026. A tag is not legal clearance.
 - **Generator model:** Problems scraped from the web and competition sites; an unnamed LLM rewrote questions so the answer is an integer (paper, arXiv 2503.14476)
-- **Decision:** `TSAI reserves`
-- **Our opinion:** use. Verifiable answers. Check AIME and MATH-500 overlap.
+- **Decision:** `excluded` — TSAI Week 2 rule: sources we cannot trace are out. An unnamed LLM rewrote the questions (arXiv 2503.14476); this matches the Stage 2 table.
+- **Our opinion:** excluded. If TSAI reconsiders it, check AIME and MATH-500 overlap first.
 - **Details and 20-row sample:** [BytedTsinghua-SIA__DAPO-Math-17k](https://github.com/RaviNaik/ERA/tree/main/v5/capstone/team10-datasets/BytedTsinghua-SIA__DAPO-Math-17k)
 
 ### `rl-math-big-math` — Big-Math-RL-Verified
@@ -903,6 +1230,44 @@ Verifiable-answer and test-based sets for RL (math, code, SWE tasks). Each entry
 - **Decision:** `TSAI reserves`
 - **Our opinion:** use. The card says it was decontaminated against common benchmarks.
 - **Details and 20-row sample:** [zwhe99__DeepMath-103K](https://github.com/RaviNaik/ERA/tree/main/v5/capstone/team10-datasets/zwhe99__DeepMath-103K)
+
+### `rl-code-code-contests` — code_contests
+
+- **Stage:** RL
+- **Set:** `rl-code-code-contests`
+- **Language:** Code (competitive; Python, C++, Java)
+- **Source:** [`deepmind/code_contests`](https://huggingface.co/datasets/deepmind/code_contests)
+- **Licence:** `cc-by-4.0` — Hugging Face tag and card. The problems and solutions are scraped from Aizu, AtCoder, CodeChef, Codeforces and HackerEarth, so the upstream sites keep their own rights.
+- **Generator model:** None. Problems and solutions are human-written. The `generated_tests` field comes from programmatic mutation of existing test inputs, with outputs checked against known-correct solutions; no LLM is involved.
+- **Decision:** `allowed (TSAI, 6 Nov)` — "deepmind/code_contests (CC-BY-4.0) is in too." It passes the 3 Nov generator rule: human-written and execution-verified, with no model generator.
+- **Decontamination (6 Nov):** Team 9's `decontam_check.py`, fingerprints v2, full set: 2,454 of 13,328 train rows flagged and removed (18.4%; LiveCodeBench 1,662, Codeforces 1,199). Details: [`rl/decontam_report.md`](../rl/decontam_report.md).
+- **Our opinion:** use, check. The card does not say who holds rights in the scraped problem text, so keep the source URL per problem. Many Codeforces problems also appear in `open-r1/codeforces` and in benchmarks such as LiveCodeBench, so the Team 9 decontamination test is needed before any use.
+- **Added by:** Tanmay Sharma (Week 2 rotation, 4 Nov 2026). Hugging Face cards and generator-model pages read on 4 Nov 2026. A tag is not legal clearance.
+
+### `rl-code-r2e-gym-v1` — R2E-Gym-V1
+
+- **Stage:** RL
+- **Set:** `rl-code-r2e-gym-v1`
+- **Language:** English issue text / Code (Python SWE)
+- **Source:** [`R2E-Gym/R2E-Gym-V1`](https://huggingface.co/datasets/R2E-Gym/R2E-Gym-V1)
+- **Licence:** `apache-2.0` — Hugging Face tag only; the card body (README) is empty. The code inside each environment keeps its upstream repository licence, which is not filtered or listed per row.
+- **Generator model:** Unknown. The `prompt` column is an instruction to an LLM to write a GitHub issue from a commit, and `problem_statement` is that LLM's output; neither the card nor the paper (arXiv 2504.07164) names the model. Some fail-to-pass tests are also LLM-generated. The commits and code come from real repositories.
+- **Decision:** `excluded` — same reason as `rl-code-r2e-gym` (R2E-Gym-Subset): the issue text comes from an untraced generator. V1 also keeps the repositories that the authors removed from the Subset because they overlap the SWE-bench test set.
+- **Our opinion:** V1 is the full 8.1K-task release; `rl-code-r2e-gym` covers the 4,578-task Subset. No R2E-Gym tasks, V1 or Subset, for RL until an allowed generator replaces the issue text and the LLM-written tests are removed or replaced. `sft-code-swe-hero-openhands` regenerated the issue text for its SFT trajectories only; the tasks' tests are still the originals.
+- **Added by:** Sagar063 (Week 2 rotation, 4 Nov 2026). Hugging Face card and paper read on 4 Nov 2026. A tag is not legal clearance.
+
+### `rl-code-afm-codeagent` — AFM-CodeAgent-RL-Dataset
+
+- **Stage:** RL
+- **Set:** `rl-code-afm-codeagent`
+- **Language:** English / Code and math
+- **Source:** [`PersonalAILab/AFM-CodeAgent-RL-Dataset`](https://huggingface.co/datasets/PersonalAILab/AFM-CodeAgent-RL-Dataset)
+- **Licence:** `apache-2.0` — Hugging Face tag.
+- **Generator model:** none in this release. The rows are problems with tests or reference answers, repackaged from LiveCodeBench v1–v3 (392), Skywork-OR1-RL-Data code (10,033) and math (23,766), and DAPO-Math (13,369): 47,560 in total (arXiv 2508.13167, Table 9).
+- **Decision:** `excluded` until the slices are separated. 13,369 of the 47,560 rows are DAPO-Math (`rl-math-dapo-17k`, excluded: an unnamed LLM rewrote the questions); the 23,766-row Skywork-OR1 math slice includes NuminaMath-1.5 subsets per its `data_source` field (`sft-math-numinamath-1.5`, excluded); 392 rows are LiveCodeBench, a benchmark.
+- **Our opinion:** Only the 10,033-row Skywork-OR1 code slice could pass, and it has not been checked on its own. If that code is wanted, check `Skywork/Skywork-OR1-RL-Data` from its own card as a separate set; this repackaging adds only a difficulty filter tuned to the AFM 7B model. The LiveCodeBench slice goes to Team 9 in any case.
+- **Added by:** Sagar063 (Week 2 rotation, 4 Nov 2026). Hugging Face card and paper read on 4 Nov 2026. A tag is not legal clearance.
+
 
 ### `sft-openhermes-2.5` — OpenHermes-2.5
 
@@ -1136,6 +1501,55 @@ Verifiable-answer and test-based sets for RL (math, code, SWE tasks). Each entry
 - **Decision:** `TSAI reserves`
 - **Our opinion:** Training purpose: assess alignment-faking mitigations and monitoring in RL. Generator: Claude-based experimental models; closed-Anthropic provenance conflicts with the week 2 generator rule and is recorded for TSAI. Subset/source relationship: evaluation transcripts collected throughout experimental RL runs, not ready-made chosen/rejected pairs or desired safe-response demonstrations. Canary-marked, scrambled transcripts include misaligned reasoning; preserve the publisher's precautions when handling them. The card asks against public reproduction without similar measures. Kolibri use is not confirmed by the report. TSAI decides any training use. [Primary methodology](https://alignment.anthropic.com/2025/alignment-faking-mitigations/). Source check: 2026-11-03; [publisher card at revision 8f43dc993db186ea10f530b72b7ce9bcd8f78262](https://huggingface.co/datasets/Anthropic/alignment-faking-rl/blob/8f43dc993db186ea10f530b72b7ce9bcd8f78262/README.md).
 
+### `rl-code-leetcodedataset` — LeetCodeDataset
+
+- **Stage:** RL
+- **Set:** `rl-code-leetcodedataset`
+- **Language:** Code (Python)
+- **Source:** [`newfacade/LeetCodeDataset`](https://huggingface.co/datasets/newfacade/LeetCodeDataset); code and README on [GitHub](https://github.com/newfacade/LeetCodeDataset)
+- **Licence:** `apache-2.0` — Hugging Face tag read on 3 Nov 2026. The GitHub repo says MIT. The problem text belongs to LeetCode and the card is silent on that, so upstream rights need checking (same note as `rl-code-code-contests`). A tag is not legal clearance.
+- **Generator model:** Unknown for the test inputs. The paper (arXiv 2504.14655, Figures 4 and 5) prompts "the LLM" for about 100+ inputs per problem and does not name the model; the GitHub README does not name it either. Test outputs come from canonical solutions taken from GitHub repos (fspv/python-leetcode, doocs/leetcode, walkccc/LeetCode) and checked on LeetCode. The paper's SFT responses were written by Qwen2.5-Coder-32B-Instruct (Apache-2.0, open weights).
+- **Decision:** `needs TSAI decision` — pending until the test-input generator is known. If it was a closed OpenAI model, this matches `sft-rl-code-rstar-coder`, excluded for GPT-4o-made test-input generators. Question to be asked on the authors' GitHub repo.
+- **Our opinion:** do not enter the RLVR pipeline until (1) the generator is known, (2) Team 9 runs a 13-gram decontamination audit, and (3) TSAI signs off on the LeetCode problem text. Problems before July 2024 are the training split and later ones the test split, so the decontamination check matters for both.
+- **Added by:** SomaKorada07 (Week 2 rotation, 4 Nov 2026; updated 5 Nov after review). Paper and GitHub README read on 5 Nov 2026.
+
+### `rl-math-processbench` — ProcessBench
+
+- **Stage:** Evaluation (step verification); listed in the RL table only as a candidate verifier or PRM benchmark
+- **Set:** `rl-math-processbench`
+- **Language:** English / Mathematics
+- **Source:** [`Qwen/ProcessBench`](https://huggingface.co/datasets/Qwen/ProcessBench)
+- **Licence:** `apache-2.0` — Hugging Face tag read on 3 Nov 2026. A tag is not legal clearance.
+- **Generator model:** Not on the card. The paper (arXiv 2412.06559, Table 4) names 12 solution generators: Meta-Llama-3-8B/70B-Instruct and Llama-3.1-8B/70B-Instruct (Llama Community Licences), and Qwen2-1.5B/7B/72B, Qwen2.5-1.5B/7B/72B and Qwen2.5-Math-7B/72B Instruct. Step errors are labelled by human experts with doctoral-level maths (three to five per solution). Qwen2.5-72B-Instruct only checked final answers and split solutions into steps.
+- **Decision:** `excluded` from training — eval only, not training data. Assigned to Team 9 (Evaluation) as an evaluation probe, with a G9 decontamination check. Not part of the RL training mix.
+- **Our opinion:** use only to evaluate a verifier or PRM. It is a benchmark built from gsm8k, MATH, OlympiadBench and Omni-MATH problems, and part of it was written by Llama models, so it must not be ingested as training data.
+- **Added by:** SomaKorada07 (Week 2 rotation, 4 Nov 2026; updated 5 Nov after review). Paper read on 5 Nov 2026.
+
+### `rl-math-deepscaler` — DeepScaleR-Preview-Dataset
+
+- **Stage:** RL
+- **Set:** `rl-math-deepscaler`
+- **Language:** English / Mathematics (competition problems with a single checkable answer)
+- **Source:** [`agentica-org/DeepScaleR-Preview-Dataset`](https://huggingface.co/datasets/agentica-org/DeepScaleR-Preview-Dataset)
+- **Licence:** `mit` on the release — Hugging Face tag read on 10 Nov 2026 (`license: mit` in the card header; no further licence text). A tag is not legal clearance. Upstream: Omni-MATH is `apache-2.0` (human competition problems); AIME and AMC problems are competition text, as in `rl-code-code-contests`; the Still source (RUCAIBox/STILL-3-Preview-RL-Data, "30k from MATH, NuminaMathCoT, and AIME 1983-2023" per the STILL GitHub README) states no licence on its card (which returned 401 to me on 10 Nov) or in its repository README.
+- **Generator model:** none for the training text. The 40,315 rows are "AIME (American Invitational Mathematics Examination) problems (1984-2023)", "AMC (American Mathematics Competition) problems (prior to 2023)", Omni-MATH and Still, each with the "Offical solution to the problem" and an answer "usually extracted from the solution". The preprocessing code (rllm-org/rllm at commit 4ff618a7ed, 12 Feb 2025) sets `GEMINI_MODEL = "gemini-1.5-pro-002"` and `OAI_RM_MODEL = "gpt-4o-mini"`; `call_gemini_llm` is used in `rllm/data/preprocess/omni_math.ipynb` to "Filter for non-proof problems" and in `difficulty_judge.py` to score difficulty; duplicates are found with `sentence-transformers/all-MiniLM-L6-v2` embeddings. So a closed Google model acted as a filter and judge, not as a writer, as far as the code shows. The team's blog post (Notion) could not be read by me; if it says Gemini also extracted the final answers, the `answer` field is closed-model output.
+- **Decision:** `excluded` — data licence rule: unstated licences are out and sources we cannot trace are out. The Still rows have no stated licence and include NuminaMath-CoT problems (`excluded` above for GPT-4 / GPT-4o content), and the release has only `problem`, `answer` and `solution` columns, with no `source` field, so those rows cannot be dropped. The MIT tag on the release does not cure the upstream terms.
+- **Our opinion:** excluded as released. The traceable parts are available directly: AIME and AMC problems through `rl-code-code-contests`-style competition sources, and Omni-MATH (Apache-2.0) as its own set, which a future rotation could add as `rl-math-omni-math`. If TSAI prefers to keep this set, the open questions are the Still licence, the closed-model filter, and the unverified Gemini answer extraction; G9 would also need the decontamination test, because the combined preprocessing notebook loads a `math` file not listed on the card.
+- **Added by:** swatibansal (Week 2 rotation, 11 Nov 2026). Hugging Face cards, papers and repository code read on 10-11 Nov 2026. A tag is not legal clearance.
+
+### `rl-safety-aya-redteaming` — Aya Red-teaming (Hindi)
+
+- **Stage:** RL (safety prompts; also usable as SFT refusal prompts once responses are written)
+- **Set:** `rl-safety-aya-redteaming`
+- **Language:** Hindi (`aya_hin.jsonl`, 915 prompts: 608 global harm, 307 local harm). The other seven languages (Arabic, English, Filipino, French, Russian, Serbian, Spanish) are not used.
+- **Source:** [`CohereLabs/aya_redteaming`](https://huggingface.co/datasets/CohereLabs/aya_redteaming) (card revision `5a16fee03c`); paper [arXiv 2406.18682](https://arxiv.org/abs/2406.18682)
+- **Licence:** `apache-2.0` — Hugging Face tag and card read on 8 Nov 2026 and unchanged on 12 Nov 2026: "This dataset can be used for any purpose, whether academic or commercial, under the terms of the Apache 2.0 License." Permissive: in under the data licence rule. A tag is not legal clearance.
+- **Generator model:** None. "Curated by: Professional compensated annotators" (card). Each row has the original prompt, a literal and a semantic English translation, a harm category and an explanation.
+- **Decision:** `TSAI reserves` — permissive licence, human-written prompts, no generator model.
+- **Our opinion:** use as Hindi safety prompts for the refusal / safety reward. Prompts only, so responses must come from the policy (RL) or an allowed generator (SFT). The prompts are harmful by design; keep them out of any general SFT mix. Small (915 rows), but human-written in Hindi with India-specific ("local") harms, which the English safety sets do not cover.
+- **For Team 9:** check it is not in the safety evaluation set; Aya red-teaming prompts are used as an eval in the paper.
+- **Added by:** jssunil (Week 2 rotation, 8 Nov 2026). Card read and Hindi file counted on 8 Nov 2026; card revision re-checked on 12 Nov 2026.
+
 ## Strategy v0
 
 - **Commercial-use data only:** Any dataset or file whose licence is missing or restricts commercial use is excluded.
@@ -1160,6 +1574,7 @@ For Team 11's public model card, datasheet, and release compliance ledger:
    - **Stack per-file permissive (MIT, Apache-2.0, BSD; attribution required):** `bigcode/starcoderdata` (`code-go`, `code-python`, `code-rust` permissive subsets; copyleft and non-commercial files filtered out).
    - **ODC-By v1.0 (Attribution required in release model card):** `HuggingFaceFW/fineweb-2` (`ind-mr-fw2`, `ind-kn-fw2`), `nvidia/Nemotron-Instruction-Following-Chat-v1` (chat split), `nvidia/Nemotron-SFT-Instruction-Following-Chat-v2`.
    - **Approved Generator Models (3 Nov TSAI decision):** Human-written data, execution-verified synthesis, and output of open-weight models whose licence is **MIT or Apache-2.0** and allows training other models on their output (`gpt-oss-120b` Apache-2.0, `DeepSeek-R1` / `DeepSeek-V3.2` MIT, `Qwen3-Coder-480B-A35B-Instruct` / `Qwen3-235B` / `Qwen3-32B` Apache-2.0, `QwQ-32B` Apache-2.0, `Mixtral-8x22B` / `Mistral-7B` Apache-2.0, `Goedel-Prover-V2-32B` Apache-2.0, `GLM-4.6` / `GLM-4.7` / `GLM-5.1` MIT).
+   - **SWE environments (`allowed`, TSAI 4 Nov):** `nebius/SWE-rebench` (CC-BY-4.0; credit SWE-rebench by Nebius, arXiv 2505.20411; human issue, patch and tests only) and the G10 `swe-envs/` (each upstream repo's own licence, MIT or BSD-3-Clause, with its repo and PR link in `env.json`).
 2. **Share-Alike Sets (`allowed (CC-BY-SA, attribution needed)`):**
    - `nvidia/Nemotron-Math-Proofs-v1` (`cc-by-sa-4.0`, generator: `gpt-oss-120b` Apache-2.0 + `Goedel-Prover-V2-32B` Apache-2.0), `nvidia/Nemotron-Math-v2` (`cc-by-4.0, cc-by-sa-4.0`, generator: `gpt-oss-120b` Apache-2.0), `nvidia/Nemotron-SFT-Science-v2` (`cc-by-sa-4.0`, generator: `gpt-oss` Apache-2.0 + `DeepSeek-V3.2` MIT + `Kimi-K2` Modified MIT), and `databricks/databricks-dolly-15k` (`cc-by-sa-4.0`, human-authored). Carry source URLs, licence links, and attribution notices in the release datasheet.
 3. **Strict Generator & Licence Exclusions (`excluded` — zero rows enter training):**
@@ -1168,3 +1583,10 @@ For Team 11's public model card, datasheet, and release compliance ledger:
      2. **Llama models & use-restriction licences (`OpenRAIL-M`):** `StarCoder2` (`bigcode/self-oss-instruct-sc2-exec-filter-50k` — BigCode OpenRAIL-M makes a model trained on its output a derivative carrying its use restrictions), `indic-align` (Llama-2-70B), `OpenMathInstruct-2` (Llama-3.1-405B), `tulu-3-sft-mixture` (Llama-3.1), `Nemotron-Post-Training-Dataset-v1` (Llama-3.3), `Nemotron-Safety-Guard-Dataset-v3` (Llama jury + Google Translate), `Big-Math-RL-Verified` (Llama-3.1), `Skywork-Reward-Preference-80K-v0.2` (Llama-3 Magpie), `community-alignment-dataset` (Llama candidates), `CodeFeedback-Filtered-Instruction` (GPT-3.5/4 + Qwen-72B non-Apache-2.0).
      3. **Unknown / unstated generator models on the dataset card:** `Nemotron-SFT-Competitive-Programming-v2`, `Nemotron-SFT-SWE-v3`, `Nemotron-SFT-Agentic-v2` (search & customer-service parts), `samvaad-hi-v1`, `oss-codes/*`, `glaive-function-calling-v2`, `Nemotron-SFT-Safety-v2`, `R2E-Gym-Subset`, `DAPO-Math-17k`, `distilabel-math-dpo`.
 
+
+### Ranjani Chandrasekaran — RL sets (week 2)
+
+| Set | Source | Language | Generator model | Licence | Decision |
+|---|---|---|---|---|---|
+| rl-synthetic2 | PrimeIntellect/SYNTHETIC-2-RL | English / Math, Code, Reasoning | DeepSeek-R1-0528 (MIT, open weights) for reasoning traces; Qwen3-32B, Qwen3-4B and DeepSeek-R1-0528-Qwen3-8B (Apache-2.0/MIT) for difficulty annotations | apache-2.0 | TSAI reserves |
+| rl-skywork-or1 | PrimeIntellect/Skywork-OR1-RL-Data | English / Mathematics | DeepSeek-R1-Distill-Qwen 1.5B, 7B, 32B (open weights, derived from MIT-licensed DeepSeek-R1) for difficulty annotations | apache-2.0 | TSAI reserves |
